@@ -16,7 +16,22 @@
 		77356DE91E7FA7A60032E9DE /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77356DE71E7FA7A60032E9DE /* RootViewController.xib */; };
 		77356DEC1E7FA8410032E9DE /* Exam1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77356DEA1E7FA8410032E9DE /* Exam1.swift */; };
 		77356DED1E7FA8410032E9DE /* Exam1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77356DEB1E7FA8410032E9DE /* Exam1.xib */; };
+		77356DF01E7FB7490032E9DE /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77356DEE1E7FB7490032E9DE /* back@2x.png */; };
+		77356DF11E7FB7490032E9DE /* radio@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77356DEF1E7FB7490032E9DE /* radio@2x.png */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		77F013E31E7FCA4300D5C4A2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		77356DCB1E7F80FC0032E9DE /* TrainingExe1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrainingExe1.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -30,6 +45,8 @@
 		77356DE71E7FA7A60032E9DE /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 		77356DEA1E7FA8410032E9DE /* Exam1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exam1.swift; sourceTree = "<group>"; };
 		77356DEB1E7FA8410032E9DE /* Exam1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Exam1.xib; sourceTree = "<group>"; };
+		77356DEE1E7FB7490032E9DE /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "back@2x.png"; path = "../../back@2x.png"; sourceTree = "<group>"; };
+		77356DEF1E7FB7490032E9DE /* radio@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "radio@2x.png"; path = "../../radio@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +65,7 @@
 			children = (
 				77356DCD1E7F80FC0032E9DE /* TrainingExe1 */,
 				77356DCC1E7F80FC0032E9DE /* Products */,
+				77F013DD1E7FC5A700D5C4A2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,8 +90,17 @@
 				77356DD51E7F80FC0032E9DE /* Assets.xcassets */,
 				77356DDA1E7F80FC0032E9DE /* Info.plist */,
 				77356DD71E7F80FC0032E9DE /* LaunchScreen.storyboard */,
+				77356DEE1E7FB7490032E9DE /* back@2x.png */,
+				77356DEF1E7FB7490032E9DE /* radio@2x.png */,
 			);
 			path = TrainingExe1;
+			sourceTree = "<group>";
+		};
+		77F013DD1E7FC5A700D5C4A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +113,7 @@
 				77356DC71E7F80FB0032E9DE /* Sources */,
 				77356DC81E7F80FB0032E9DE /* Frameworks */,
 				77356DC91E7F80FB0032E9DE /* Resources */,
+				77F013E31E7FCA4300D5C4A2 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -138,8 +166,10 @@
 				77356DD91E7F80FC0032E9DE /* LaunchScreen.storyboard in Resources */,
 				77356DD61E7F80FC0032E9DE /* Assets.xcassets in Resources */,
 				77356DE91E7FA7A60032E9DE /* RootViewController.xib in Resources */,
+				77356DF11E7FB7490032E9DE /* radio@2x.png in Resources */,
 				77356DED1E7FA8410032E9DE /* Exam1.xib in Resources */,
 				77356DE51E7FA5440032E9DE /* Exam2.xib in Resources */,
+				77356DF01E7FB7490032E9DE /* back@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +298,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TrainingExe1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rikkeisoft.TrainingExe1;
@@ -280,6 +314,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TrainingExe1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rikkeisoft.TrainingExe1;

@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  Exam1.swift
 //  TrainingExe1
 //
 //  Created by Nguyen Minh Tien on 3/20/17.
@@ -8,26 +8,44 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class Exam1: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.printHelloWorld()
-        self.printRectangleStar()
-        self.arraytest()
-        self.dictTest()
-        self.listDictTest()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    @IBAction func action1(_ sender: Any) {
+        self.printHelloWorld()
+    }
+    
+    @IBAction func action2(_ sender: Any) {
+        self.printRectangleStar()
+    }
+    
+    @IBAction func action3(_ sender: Any) {
+        self.arraytest()
+    }
+    
+    @IBAction func action4(_ sender: Any) {
+        self.dictTest()
+    }
+   
+    @IBAction func action5(_ sender: Any) {
+        self.listDictTest()
+    }
+    
+    
+    
     public func printHelloWorld(){
         print("Hello World");
     }
     
+   
     public func printRectangleStar(){
         for i in 0..<15 {
             for j in 0...12 {
@@ -76,5 +94,6 @@ class ViewController: UIViewController {
             print("\(item["ten"]!) : \(item["tuoi"]!)")
         }
     }
-}
 
+
+}

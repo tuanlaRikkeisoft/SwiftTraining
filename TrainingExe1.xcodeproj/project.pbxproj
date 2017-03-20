@@ -16,8 +16,6 @@
 		77356DE91E7FA7A60032E9DE /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77356DE71E7FA7A60032E9DE /* RootViewController.xib */; };
 		77356DEC1E7FA8410032E9DE /* Exam1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77356DEA1E7FA8410032E9DE /* Exam1.swift */; };
 		77356DED1E7FA8410032E9DE /* Exam1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77356DEB1E7FA8410032E9DE /* Exam1.xib */; };
-		77356DF01E7FB7490032E9DE /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77356DEE1E7FB7490032E9DE /* back@2x.png */; };
-		77356DF11E7FB7490032E9DE /* radio@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77356DEF1E7FB7490032E9DE /* radio@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -45,8 +43,6 @@
 		77356DE71E7FA7A60032E9DE /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 		77356DEA1E7FA8410032E9DE /* Exam1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exam1.swift; sourceTree = "<group>"; };
 		77356DEB1E7FA8410032E9DE /* Exam1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Exam1.xib; sourceTree = "<group>"; };
-		77356DEE1E7FB7490032E9DE /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "back@2x.png"; path = "../../back@2x.png"; sourceTree = "<group>"; };
-		77356DEF1E7FB7490032E9DE /* radio@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "radio@2x.png"; path = "../../radio@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,8 +86,6 @@
 				77356DD51E7F80FC0032E9DE /* Assets.xcassets */,
 				77356DDA1E7F80FC0032E9DE /* Info.plist */,
 				77356DD71E7F80FC0032E9DE /* LaunchScreen.storyboard */,
-				77356DEE1E7FB7490032E9DE /* back@2x.png */,
-				77356DEF1E7FB7490032E9DE /* radio@2x.png */,
 			);
 			path = TrainingExe1;
 			sourceTree = "<group>";
@@ -166,10 +160,8 @@
 				77356DD91E7F80FC0032E9DE /* LaunchScreen.storyboard in Resources */,
 				77356DD61E7F80FC0032E9DE /* Assets.xcassets in Resources */,
 				77356DE91E7FA7A60032E9DE /* RootViewController.xib in Resources */,
-				77356DF11E7FB7490032E9DE /* radio@2x.png in Resources */,
 				77356DED1E7FA8410032E9DE /* Exam1.xib in Resources */,
 				77356DE51E7FA5440032E9DE /* Exam2.xib in Resources */,
-				77356DF01E7FB7490032E9DE /* back@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

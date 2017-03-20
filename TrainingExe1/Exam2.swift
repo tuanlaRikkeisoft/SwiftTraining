@@ -22,29 +22,14 @@ class Exam2: UIViewController ,UITextFieldDelegate{
     @IBOutlet weak var tel1TextField: UITextField!
     @IBOutlet weak var tel2TextField: UITextField!
     @IBOutlet weak var tel3TextField: UITextField!
-
     
-    @IBAction func actionMale(_ sender: Any) {
-        
-    }
-    @IBAction func actionFeMail(_ sender: Any) {
-        
-    }
-    
-    @IBAction func actionRegister(_ sender: Any) {
-        
-    }
-    
-    @IBAction func touchDateOfBirth(_ sender: Any) {
-      
-    }
     var firstName = String()
     var lastName = String()
     var firstNameKata = String()
     var lastNameKata = String()
     var email = String()
-    var sexual = Bool()
-    
+    var sexual : Bool = true
+    var dateOfBirth = String()
     var tel1 = String()
     var tel2 = String()
     var tel3 = String()
@@ -54,15 +39,16 @@ class Exam2: UIViewController ,UITextFieldDelegate{
         firstNameTextField.delegate = self
         lastNameTextField.delegate = self
         firstNameKataTextField.delegate = self
-        lastNameKataTextField.delegate = self;
-        emailTextField.delegate = self;
+        lastNameKataTextField.delegate = self
+        emailTextField.delegate = self
         emailTextField.keyboardType = UIKeyboardType.emailAddress
-        tel1TextField.delegate = self;
-        tel1TextField.keyboardType = UIKeyboardType.phonePad;
-        tel2TextField.delegate = self;
-        tel2TextField.keyboardType = UIKeyboardType.phonePad;
-        tel3TextField.delegate = self;
-        tel3TextField.keyboardType = UIKeyboardType.phonePad;
+        dateOfBirthTextField.delegate = self
+        tel1TextField.delegate = self
+        tel1TextField.keyboardType = UIKeyboardType.phonePad
+        tel2TextField.delegate = self
+        tel2TextField.keyboardType = UIKeyboardType.phonePad
+        tel3TextField.delegate = self
+        tel3TextField.keyboardType = UIKeyboardType.phonePad
     }
     
     override func didReceiveMemoryWarning() {
@@ -70,36 +56,36 @@ class Exam2: UIViewController ,UITextFieldDelegate{
         // Dispose of any resources that can be recreated.
     }
     
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        
-        let resultString = string.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
-        
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        let resultString = textField.text!.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
+
         if textField == firstNameTextField {
-            self.firstName = resultString
+            firstName = resultString
         }else if textField == lastNameTextField {
-            self.lastName = resultString
+            lastName = resultString
         }else if textField == firstNameKataTextField{
-            self.firstNameKata = resultString
+            firstNameKata = resultString
         }else if textField == lastNameKataTextField{
-            self.lastNameKata = resultString
+            lastNameKata = resultString
         }else if textField == emailTextField{
-            self.email = resultString
+            email = resultString
+        }else if textField == dateOfBirthTextField{
+            dateOfBirth = resultString
         }else if textField == tel1TextField{
-            self.tel1 = resultString
+            tel1 = resultString
         }else if textField == tel2TextField{
-            self.tel2 = resultString
+            tel2 = resultString
         }else if textField == tel3TextField{
-            self.tel3 = resultString
+            tel3 = resultString
+        }else{
+            print("OK")
         }
-        else{
-            print("OK");
-        }
-        return true;
     }
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
         if textField == dateOfBirthTextField {
             let datePicker = UIDatePicker()
+            datePicker.datePickerMode = UIDatePickerMode.date
             dateOfBirthTextField.inputView = datePicker
             datePicker.addTarget(self, action: #selector(datePickerChanged(sender:)), for: .valueChanged)
         }
@@ -118,10 +104,47 @@ class Exam2: UIViewController ,UITextFieldDelegate{
         return true
     }
 
+   
+
+    @IBAction func actionMale(_ sender: Any) {
+        sexual = !sexual
+    }
+    @IBAction func actionFeMail(_ sender: Any) {
+        sexual = !sexual
+    }
+    
+    @IBAction func actionRegister(_ sender: Any) {
+        self.view!.endEditing(true)
+        let message = self.checkValidate()
+        if  message.characters.count > 0 {
+            self.showAlertWithMessage(message)
+        }else{
+            self.showAlertWithMessage("Đăng ký thành công")
+        }
+    }
+    
+    func checkValidate() -> String {
+        var message = String()
+        if firstName.characters.count < 1 || lastName.characters.count < 1 || firstNameKata.characters.count < 1 || lastNameKata.characters.count < 1 || email.characters.count < 1 || dateOfBirth.characters.count > 0 {
+            message = "Chưa nhập đủ đầu vào"
+        }else if (email.characters.count>0  && !isValidEmail(testStr: email))  {
+            message = "Email sai định dạng"
+        }else{
+            message = String()
+        }
+        return message
+    }
+    
     func isValidEmail(testStr:String) -> Bool {
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
         let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailTest.evaluate(with: testStr)
     }
+    
+    func showAlertWithMessage(_ message: String){
+        let alert = UIAlertController(title: nil, message: message, preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction.init(title: "Ok", style: UIAlertActionStyle.cancel, handler: nil))
 
+        self.present(alert, animated: true, completion: nil)
+    }
 }

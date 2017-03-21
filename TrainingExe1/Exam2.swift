@@ -49,6 +49,8 @@ class Exam2: UIViewController ,UITextFieldDelegate{
         tel2TextField.keyboardType = UIKeyboardType.phonePad
         tel3TextField.delegate = self
         tel3TextField.keyboardType = UIKeyboardType.phonePad
+        maleButton.setImage(UIImage.init(named: "radio-selected.png"), for: UIControlState.normal)
+        feMaleButton.setImage(UIImage.init(named: "radio-not-selected.png"), for: UIControlState.normal)
     }
     
     override func didReceiveMemoryWarning() {
@@ -107,10 +109,14 @@ class Exam2: UIViewController ,UITextFieldDelegate{
    
 
     @IBAction func actionMale(_ sender: Any) {
-        sexual = !sexual
+        sexual = true
+        maleButton.setImage(UIImage.init(named: "radio-selected.png"), for: UIControlState.normal)
+        feMaleButton.setImage(UIImage.init(named: "radio-not-selected.png"), for: UIControlState.normal)
     }
     @IBAction func actionFeMail(_ sender: Any) {
-        sexual = !sexual
+        sexual = false
+        maleButton.setImage(UIImage.init(named: "radio-not-selected.png"), for: UIControlState.normal)
+        feMaleButton.setImage(UIImage.init(named: "radio-selected.png"), for: UIControlState.normal)
     }
     
     @IBAction func actionRegister(_ sender: Any) {

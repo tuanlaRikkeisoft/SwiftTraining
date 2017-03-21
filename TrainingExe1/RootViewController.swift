@@ -28,7 +28,7 @@ class RootViewController: UIViewController {
     }
     
     @IBAction func actionExam3(_ sender: Any) {
-        self.navigationController?.pushViewController(Exam3(), animated: true)
+        self.navigationController?.pushViewController(Exam3Containner(), animated: true)
     }
     
     @IBAction func actionExam4(_ sender: Any) {

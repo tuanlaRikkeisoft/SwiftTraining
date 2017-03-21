@@ -20,6 +20,16 @@
 		77356DE91E7FA7A60032E9DE /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77356DE71E7FA7A60032E9DE /* RootViewController.xib */; };
 		77356DEC1E7FA8410032E9DE /* Exam1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77356DEA1E7FA8410032E9DE /* Exam1.swift */; };
 		77356DED1E7FA8410032E9DE /* Exam1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77356DEB1E7FA8410032E9DE /* Exam1.xib */; };
+		77FA020B1E80B6070032E955 /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77FA02091E80B6070032E955 /* back@2x.png */; };
+		77FA020F1E80B7280032E955 /* radio-not-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77FA020D1E80B7280032E955 /* radio-not-selected@2x.png */; };
+		77FA02101E80B7280032E955 /* radio-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77FA020E1E80B7280032E955 /* radio-selected@2x.png */; };
+		77FA02121E80BAF90032E955 /* Exam3Containner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FA02111E80BAF90032E955 /* Exam3Containner.swift */; };
+		77FA02151E80BB140032E955 /* Exam3Tab2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FA02131E80BB140032E955 /* Exam3Tab2.swift */; };
+		77FA02161E80BB140032E955 /* Exam3Tab2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77FA02141E80BB140032E955 /* Exam3Tab2.xib */; };
+		77FA02191E80D7D30032E955 /* Exam3Tab3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FA02171E80D7D30032E955 /* Exam3Tab3.swift */; };
+		77FA021A1E80D7D30032E955 /* Exam3Tab3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77FA02181E80D7D30032E955 /* Exam3Tab3.xib */; };
+		77FA021D1E80D9810032E955 /* Exam3Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FA021B1E80D9810032E955 /* Exam3Cell.swift */; };
+		77FA021E1E80D9810032E955 /* Exam3Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77FA021C1E80D9810032E955 /* Exam3Cell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -51,6 +61,16 @@
 		77356DE71E7FA7A60032E9DE /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 		77356DEA1E7FA8410032E9DE /* Exam1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exam1.swift; sourceTree = "<group>"; };
 		77356DEB1E7FA8410032E9DE /* Exam1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Exam1.xib; sourceTree = "<group>"; };
+		77FA02091E80B6070032E955 /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
+		77FA020D1E80B7280032E955 /* radio-not-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radio-not-selected@2x.png"; sourceTree = "<group>"; };
+		77FA020E1E80B7280032E955 /* radio-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radio-selected@2x.png"; sourceTree = "<group>"; };
+		77FA02111E80BAF90032E955 /* Exam3Containner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exam3Containner.swift; sourceTree = "<group>"; };
+		77FA02131E80BB140032E955 /* Exam3Tab2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exam3Tab2.swift; sourceTree = "<group>"; };
+		77FA02141E80BB140032E955 /* Exam3Tab2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Exam3Tab2.xib; sourceTree = "<group>"; };
+		77FA02171E80D7D30032E955 /* Exam3Tab3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exam3Tab3.swift; sourceTree = "<group>"; };
+		77FA02181E80D7D30032E955 /* Exam3Tab3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Exam3Tab3.xib; sourceTree = "<group>"; };
+		77FA021B1E80D9810032E955 /* Exam3Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exam3Cell.swift; sourceTree = "<group>"; };
+		77FA021C1E80D9810032E955 /* Exam3Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Exam3Cell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +114,20 @@
 				77356DD51E7F80FC0032E9DE /* Assets.xcassets */,
 				77356DDA1E7F80FC0032E9DE /* Info.plist */,
 				77356DD71E7F80FC0032E9DE /* LaunchScreen.storyboard */,
+				77FA02111E80BAF90032E955 /* Exam3Containner.swift */,
 				4CA10F721E80366800D74189 /* Exam3.swift */,
 				4CA10F731E80366800D74189 /* Exam3.xib */,
+				77FA02131E80BB140032E955 /* Exam3Tab2.swift */,
+				77FA02141E80BB140032E955 /* Exam3Tab2.xib */,
+				77FA02171E80D7D30032E955 /* Exam3Tab3.swift */,
+				77FA02181E80D7D30032E955 /* Exam3Tab3.xib */,
+				77FA021B1E80D9810032E955 /* Exam3Cell.swift */,
+				77FA021C1E80D9810032E955 /* Exam3Cell.xib */,
 				4CA10F761E80372300D74189 /* Exam4.swift */,
 				4CA10F771E80372300D74189 /* Exam4.xib */,
+				77FA020D1E80B7280032E955 /* radio-not-selected@2x.png */,
+				77FA020E1E80B7280032E955 /* radio-selected@2x.png */,
+				77FA02091E80B6070032E955 /* back@2x.png */,
 			);
 			path = TrainingExe1;
 			sourceTree = "<group>";
@@ -170,12 +200,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				77356DD91E7F80FC0032E9DE /* LaunchScreen.storyboard in Resources */,
+				77FA020B1E80B6070032E955 /* back@2x.png in Resources */,
 				77356DD61E7F80FC0032E9DE /* Assets.xcassets in Resources */,
+				77FA021E1E80D9810032E955 /* Exam3Cell.xib in Resources */,
 				4CA10F751E80366800D74189 /* Exam3.xib in Resources */,
+				77FA02161E80BB140032E955 /* Exam3Tab2.xib in Resources */,
 				4CA10F791E80372300D74189 /* Exam4.xib in Resources */,
+				77FA021A1E80D7D30032E955 /* Exam3Tab3.xib in Resources */,
 				77356DE91E7FA7A60032E9DE /* RootViewController.xib in Resources */,
+				77FA02101E80B7280032E955 /* radio-selected@2x.png in Resources */,
 				77356DED1E7FA8410032E9DE /* Exam1.xib in Resources */,
 				77356DE51E7FA5440032E9DE /* Exam2.xib in Resources */,
+				77FA020F1E80B7280032E955 /* radio-not-selected@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,10 +222,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77FA021D1E80D9810032E955 /* Exam3Cell.swift in Sources */,
 				4CA10F741E80366800D74189 /* Exam3.swift in Sources */,
+				77FA02151E80BB140032E955 /* Exam3Tab2.swift in Sources */,
+				77FA02121E80BAF90032E955 /* Exam3Containner.swift in Sources */,
 				77356DCF1E7F80FC0032E9DE /* AppDelegate.swift in Sources */,
 				77356DE81E7FA7A60032E9DE /* RootViewController.swift in Sources */,
 				77356DEC1E7FA8410032E9DE /* Exam1.swift in Sources */,
+				77FA02191E80D7D30032E955 /* Exam3Tab3.swift in Sources */,
 				77356DE41E7FA5440032E9DE /* Exam2.swift in Sources */,
 				4CA10F781E80372300D74189 /* Exam4.swift in Sources */,
 			);

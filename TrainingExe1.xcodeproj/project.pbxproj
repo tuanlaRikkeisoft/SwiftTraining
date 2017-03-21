@@ -30,6 +30,17 @@
 		77FA021A1E80D7D30032E955 /* Exam3Tab3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77FA02181E80D7D30032E955 /* Exam3Tab3.xib */; };
 		77FA021D1E80D9810032E955 /* Exam3Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FA021B1E80D9810032E955 /* Exam3Cell.swift */; };
 		77FA021E1E80D9810032E955 /* Exam3Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77FA021C1E80D9810032E955 /* Exam3Cell.xib */; };
+		77FA02201E80E4380032E955 /* Exam3Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FA021F1E80E4380032E955 /* Exam3Model.swift */; };
+		77FA02271E80E6D50032E955 /* ca-hoi@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77FA02231E80E6D50032E955 /* ca-hoi@2x.jpg */; };
+		77FA02281E80E6D50032E955 /* pizza@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77FA02241E80E6D50032E955 /* pizza@2x.jpg */; };
+		77FA02291E80E6D50032E955 /* hamberger@2x.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 77FA02251E80E6D50032E955 /* hamberger@2x.jpeg */; };
+		77FA022A1E80E6D50032E955 /* khoai-tay@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77FA02261E80E6D50032E955 /* khoai-tay@2x.jpg */; };
+		77FA02311E80E8BE0032E955 /* 0star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77FA022B1E80E8BE0032E955 /* 0star@2x.png */; };
+		77FA02321E80E8BE0032E955 /* 1star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77FA022C1E80E8BE0032E955 /* 1star@2x.png */; };
+		77FA02331E80E8BE0032E955 /* 2star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77FA022D1E80E8BE0032E955 /* 2star@2x.png */; };
+		77FA02341E80E8BE0032E955 /* 3star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77FA022E1E80E8BE0032E955 /* 3star@2x.png */; };
+		77FA02351E80E8BE0032E955 /* 4star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77FA022F1E80E8BE0032E955 /* 4star@2x.png */; };
+		77FA02361E80E8BE0032E955 /* 5star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77FA02301E80E8BE0032E955 /* 5star@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -71,6 +82,17 @@
 		77FA02181E80D7D30032E955 /* Exam3Tab3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Exam3Tab3.xib; sourceTree = "<group>"; };
 		77FA021B1E80D9810032E955 /* Exam3Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exam3Cell.swift; sourceTree = "<group>"; };
 		77FA021C1E80D9810032E955 /* Exam3Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Exam3Cell.xib; sourceTree = "<group>"; };
+		77FA021F1E80E4380032E955 /* Exam3Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exam3Model.swift; sourceTree = "<group>"; };
+		77FA02231E80E6D50032E955 /* ca-hoi@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ca-hoi@2x.jpg"; sourceTree = "<group>"; };
+		77FA02241E80E6D50032E955 /* pizza@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "pizza@2x.jpg"; sourceTree = "<group>"; };
+		77FA02251E80E6D50032E955 /* hamberger@2x.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hamberger@2x.jpeg"; sourceTree = "<group>"; };
+		77FA02261E80E6D50032E955 /* khoai-tay@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "khoai-tay@2x.jpg"; sourceTree = "<group>"; };
+		77FA022B1E80E8BE0032E955 /* 0star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "0star@2x.png"; sourceTree = "<group>"; };
+		77FA022C1E80E8BE0032E955 /* 1star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1star@2x.png"; sourceTree = "<group>"; };
+		77FA022D1E80E8BE0032E955 /* 2star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2star@2x.png"; sourceTree = "<group>"; };
+		77FA022E1E80E8BE0032E955 /* 3star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3star@2x.png"; sourceTree = "<group>"; };
+		77FA022F1E80E8BE0032E955 /* 4star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "4star@2x.png"; sourceTree = "<group>"; };
+		77FA02301E80E8BE0032E955 /* 5star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "5star@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,11 +145,22 @@
 				77FA02181E80D7D30032E955 /* Exam3Tab3.xib */,
 				77FA021B1E80D9810032E955 /* Exam3Cell.swift */,
 				77FA021C1E80D9810032E955 /* Exam3Cell.xib */,
+				77FA021F1E80E4380032E955 /* Exam3Model.swift */,
 				4CA10F761E80372300D74189 /* Exam4.swift */,
 				4CA10F771E80372300D74189 /* Exam4.xib */,
 				77FA020D1E80B7280032E955 /* radio-not-selected@2x.png */,
 				77FA020E1E80B7280032E955 /* radio-selected@2x.png */,
 				77FA02091E80B6070032E955 /* back@2x.png */,
+				77FA02231E80E6D50032E955 /* ca-hoi@2x.jpg */,
+				77FA02241E80E6D50032E955 /* pizza@2x.jpg */,
+				77FA02251E80E6D50032E955 /* hamberger@2x.jpeg */,
+				77FA02261E80E6D50032E955 /* khoai-tay@2x.jpg */,
+				77FA022B1E80E8BE0032E955 /* 0star@2x.png */,
+				77FA022C1E80E8BE0032E955 /* 1star@2x.png */,
+				77FA022D1E80E8BE0032E955 /* 2star@2x.png */,
+				77FA022E1E80E8BE0032E955 /* 3star@2x.png */,
+				77FA022F1E80E8BE0032E955 /* 4star@2x.png */,
+				77FA02301E80E8BE0032E955 /* 5star@2x.png */,
 			);
 			path = TrainingExe1;
 			sourceTree = "<group>";
@@ -200,18 +233,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				77356DD91E7F80FC0032E9DE /* LaunchScreen.storyboard in Resources */,
+				77FA02271E80E6D50032E955 /* ca-hoi@2x.jpg in Resources */,
 				77FA020B1E80B6070032E955 /* back@2x.png in Resources */,
 				77356DD61E7F80FC0032E9DE /* Assets.xcassets in Resources */,
+				77FA02361E80E8BE0032E955 /* 5star@2x.png in Resources */,
+				77FA02341E80E8BE0032E955 /* 3star@2x.png in Resources */,
 				77FA021E1E80D9810032E955 /* Exam3Cell.xib in Resources */,
+				77FA02321E80E8BE0032E955 /* 1star@2x.png in Resources */,
 				4CA10F751E80366800D74189 /* Exam3.xib in Resources */,
 				77FA02161E80BB140032E955 /* Exam3Tab2.xib in Resources */,
 				4CA10F791E80372300D74189 /* Exam4.xib in Resources */,
 				77FA021A1E80D7D30032E955 /* Exam3Tab3.xib in Resources */,
 				77356DE91E7FA7A60032E9DE /* RootViewController.xib in Resources */,
 				77FA02101E80B7280032E955 /* radio-selected@2x.png in Resources */,
+				77FA02351E80E8BE0032E955 /* 4star@2x.png in Resources */,
+				77FA02281E80E6D50032E955 /* pizza@2x.jpg in Resources */,
+				77FA02291E80E6D50032E955 /* hamberger@2x.jpeg in Resources */,
 				77356DED1E7FA8410032E9DE /* Exam1.xib in Resources */,
 				77356DE51E7FA5440032E9DE /* Exam2.xib in Resources */,
 				77FA020F1E80B7280032E955 /* radio-not-selected@2x.png in Resources */,
+				77FA02331E80E8BE0032E955 /* 2star@2x.png in Resources */,
+				77FA022A1E80E6D50032E955 /* khoai-tay@2x.jpg in Resources */,
+				77FA02311E80E8BE0032E955 /* 0star@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +272,7 @@
 				77356DCF1E7F80FC0032E9DE /* AppDelegate.swift in Sources */,
 				77356DE81E7FA7A60032E9DE /* RootViewController.swift in Sources */,
 				77356DEC1E7FA8410032E9DE /* Exam1.swift in Sources */,
+				77FA02201E80E4380032E955 /* Exam3Model.swift in Sources */,
 				77FA02191E80D7D30032E955 /* Exam3Tab3.swift in Sources */,
 				77356DE41E7FA5440032E9DE /* Exam2.swift in Sources */,
 				4CA10F781E80372300D74189 /* Exam4.swift in Sources */,

@@ -26,5 +26,27 @@ class RootViewController: UIViewController {
     @IBAction func actionExam2(_ sender: Any) {
         self.navigationController?.pushViewController(Exam2(), animated: true)
     }
-
+    
+    @IBAction func actionExam3(_ sender: Any) {
+        self.navigationController?.pushViewController(Exam3(), animated: true)
+    }
+    
+    @IBAction func actionExam4(_ sender: Any) {
+        self.navigationController?.pushViewController(Exam4(), animated: true)
+    }
+    
+    @IBAction func actionExam5(_ sender: Any) {
+    }
+    @IBAction func actionExam6(_ sender: Any) {
+    }
+    @IBAction func actionExam7(_ sender: Any) {
+    }
+    @IBAction func actionExam8(_ sender: Any) {
+    }
+    
+    @IBAction func actionExam9(_ sender: Any) {
+        
+    }
+    @IBAction func actionExam10(_ sender: Any) {
+    }
 }

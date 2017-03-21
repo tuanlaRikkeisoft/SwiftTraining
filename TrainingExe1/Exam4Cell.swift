@@ -30,7 +30,7 @@ class Exam4Cell: UITableViewCell {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy.MM.dd hh:mm"
         self.dateLabel.text? = dateFormatter.string(from: model.captureDate)
-        self.avValueLabel.text? = model.avValue.description
+        self.avValueLabel.text? = "AV \(model.avValue.description)"
         self.loviValueLabel.text? = model.loviValue.description
     }
 }

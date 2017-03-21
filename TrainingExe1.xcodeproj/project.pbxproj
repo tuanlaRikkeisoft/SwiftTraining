@@ -46,6 +46,8 @@
 		77FA02431E8103550032E955 /* Exam4Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77FA02411E8103550032E955 /* Exam4Cell.xib */; };
 		77FA02451E8104840032E955 /* right-arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77FA02441E8104840032E955 /* right-arrow@2x.png */; };
 		77FA02471E810D9B0032E955 /* video-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77FA02461E810D9B0032E955 /* video-icon@2x.png */; };
+		77FA024B1E811C300032E955 /* DetailExam4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FA02491E811C300032E955 /* DetailExam4.swift */; };
+		77FA024C1E811C300032E955 /* DetailExam4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77FA024A1E811C300032E955 /* DetailExam4.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -103,6 +105,8 @@
 		77FA02411E8103550032E955 /* Exam4Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Exam4Cell.xib; sourceTree = "<group>"; };
 		77FA02441E8104840032E955 /* right-arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "right-arrow@2x.png"; sourceTree = "<group>"; };
 		77FA02461E810D9B0032E955 /* video-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "video-icon@2x.png"; sourceTree = "<group>"; };
+		77FA02491E811C300032E955 /* DetailExam4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailExam4.swift; sourceTree = "<group>"; };
+		77FA024A1E811C300032E955 /* DetailExam4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailExam4.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +140,7 @@
 		77356DCD1E7F80FC0032E9DE /* TrainingExe1 */ = {
 			isa = PBXGroup;
 			children = (
+				77FA02481E811C100032E955 /* Exam5 */,
 				77FA023B1E80FF910032E955 /* Exam4 */,
 				77FA023A1E80FF800032E955 /* Exam3 */,
 				77FA02391E80FF700032E955 /* Exam2 */,
@@ -243,6 +248,15 @@
 			name = Image;
 			sourceTree = "<group>";
 		};
+		77FA02481E811C100032E955 /* Exam5 */ = {
+			isa = PBXGroup;
+			children = (
+				77FA02491E811C300032E955 /* DetailExam4.swift */,
+				77FA024A1E811C300032E955 /* DetailExam4.xib */,
+			);
+			name = Exam5;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -310,6 +324,7 @@
 				77FA02361E80E8BE0032E955 /* 5star@2x.png in Resources */,
 				77FA02341E80E8BE0032E955 /* 3star@2x.png in Resources */,
 				77FA021E1E80D9810032E955 /* Exam3Cell.xib in Resources */,
+				77FA024C1E811C300032E955 /* DetailExam4.xib in Resources */,
 				77FA02321E80E8BE0032E955 /* 1star@2x.png in Resources */,
 				4CA10F751E80366800D74189 /* Exam3.xib in Resources */,
 				77FA02161E80BB140032E955 /* Exam3Tab2.xib in Resources */,
@@ -351,6 +366,7 @@
 				77FA02201E80E4380032E955 /* Exam3Model.swift in Sources */,
 				77FA02191E80D7D30032E955 /* Exam3Tab3.swift in Sources */,
 				77356DE41E7FA5440032E9DE /* Exam2.swift in Sources */,
+				77FA024B1E811C300032E955 /* DetailExam4.swift in Sources */,
 				4CA10F781E80372300D74189 /* Exam4.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

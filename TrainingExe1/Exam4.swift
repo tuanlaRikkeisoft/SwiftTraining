@@ -54,7 +54,6 @@ class Exam4: UIViewController ,UITableViewDelegate,UITableViewDataSource{
     }
     func fakeData(){
         self.title = "Exam4"
-        tableView.allowsSelection = false
         let av1 = AVResultModel.init(Date.init(), 2.1, 164)
         let av2 = AVResultModel.init(Date.init(), 2.5, 169)
         let av3 = AVResultModel.init(Date.init(), 1.1, 69)
@@ -79,6 +78,7 @@ class Exam4: UIViewController ,UITableViewDelegate,UITableViewDataSource{
         let model = items[indexPath.row] as AVResultModel
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "Exam4Cell") as? Exam4Cell
+        cell?.selectionStyle = UITableViewCellSelectionStyle.none
         cell?.setModel(model)
         return cell!
     }
@@ -107,6 +107,16 @@ class Exam4: UIViewController ,UITableViewDelegate,UITableViewDataSource{
         if (editingStyle == UITableViewCellEditingStyle.delete) {
             items.remove(at: indexPath.row)
             tableView.reloadData()
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let detailVC = DetailExam4()
+        detailVC.model = items[indexPath.row]
+        if (indexPath.row % 2 == 0) {
+            self.navigationController?.pushViewController(detailVC, animated: true)
+        }else{
+            self.navigationController?.present(detailVC, animated: true, completion: nil)
         }
     }
     

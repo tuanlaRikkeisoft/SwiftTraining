@@ -39,7 +39,7 @@ class RootViewController: UIViewController {
         self.navigationController?.pushViewController(Exam4(), animated: true)
     }
     @IBAction func actionExam6(_ sender: Any) {
-        
+        self.navigationController?.pushViewController(Exam6(), animated: true)
     }
     @IBAction func actionExam7(_ sender: Any) {
     }

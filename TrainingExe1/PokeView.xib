@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PokeView" customModule="TrainingExe1" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="poke3.png" translatesAutoresizingMaskIntoConstraints="NO" id="KVo-kb-8Xo">
+                    <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="4tG-no-dJu" appends="YES" id="Q9O-9R-ze8"/>
+                        <outletCollection property="gestureRecognizers" destination="WXh-nB-VTz" appends="YES" id="Huw-BW-Pgh"/>
+                    </connections>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="KVo-kb-8Xo" secondAttribute="trailing" id="2TH-JM-aGg"/>
+                <constraint firstAttribute="bottom" secondItem="KVo-kb-8Xo" secondAttribute="bottom" id="Cz3-Ux-iRk"/>
+                <constraint firstItem="KVo-kb-8Xo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Nqf-xs-z9f"/>
+                <constraint firstItem="KVo-kb-8Xo" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="fYe-bT-dd9"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="pokeImageView" destination="KVo-kb-8Xo" id="6xO-mC-Ivi"/>
+                <outlet property="swipe" destination="WXh-nB-VTz" id="tD4-T2-snv"/>
+                <outlet property="tap" destination="4tG-no-dJu" id="OiY-Dv-Azo"/>
+            </connections>
+            <point key="canvasLocation" x="359" y="-327"/>
+        </view>
+        <tapGestureRecognizer id="4tG-no-dJu">
+            <connections>
+                <action selector="actionTapPoke:" destination="iN0-l3-epB" id="bJA-bz-voG"/>
+            </connections>
+        </tapGestureRecognizer>
+        <swipeGestureRecognizer direction="right" id="WXh-nB-VTz">
+            <connections>
+                <action selector="actionSwipePoke:" destination="iN0-l3-epB" id="ofw-lr-bqp"/>
+            </connections>
+        </swipeGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="poke3.png" width="500" height="500"/>
+    </resources>
+</document>

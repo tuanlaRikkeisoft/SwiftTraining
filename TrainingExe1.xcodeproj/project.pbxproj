@@ -48,6 +48,16 @@
 		77FA02471E810D9B0032E955 /* video-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77FA02461E810D9B0032E955 /* video-icon@2x.png */; };
 		77FA024B1E811C300032E955 /* DetailExam4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FA02491E811C300032E955 /* DetailExam4.swift */; };
 		77FA024C1E811C300032E955 /* DetailExam4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77FA024A1E811C300032E955 /* DetailExam4.xib */; };
+		77FA02501E81241F0032E955 /* Exam6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FA024E1E81241F0032E955 /* Exam6.swift */; };
+		77FA02511E81241F0032E955 /* Exam6.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77FA024F1E81241F0032E955 /* Exam6.xib */; };
+		77FA02551E8126C50032E955 /* poke3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77FA02521E8126C50032E955 /* poke3@2x.png */; };
+		77FA02561E8126C50032E955 /* poke2@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77FA02531E8126C50032E955 /* poke2@2x.jpg */; };
+		77FA02571E8126C50032E955 /* poke1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77FA02541E8126C50032E955 /* poke1@2x.png */; };
+		77FA025A1E81271F0032E955 /* poke4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77FA02581E81271F0032E955 /* poke4@2x.png */; };
+		77FA025B1E81271F0032E955 /* poke5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77FA02591E81271F0032E955 /* poke5@2x.png */; };
+		77FA025D1E8128460032E955 /* poke@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77FA025C1E8128460032E955 /* poke@2x.jpg */; };
+		77FA02611E812A280032E955 /* PokeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FA02601E812A280032E955 /* PokeView.swift */; };
+		77FA02631E812A370032E955 /* PokeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77FA02621E812A370032E955 /* PokeView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -107,6 +117,16 @@
 		77FA02461E810D9B0032E955 /* video-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "video-icon@2x.png"; sourceTree = "<group>"; };
 		77FA02491E811C300032E955 /* DetailExam4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailExam4.swift; sourceTree = "<group>"; };
 		77FA024A1E811C300032E955 /* DetailExam4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailExam4.xib; sourceTree = "<group>"; };
+		77FA024E1E81241F0032E955 /* Exam6.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exam6.swift; sourceTree = "<group>"; };
+		77FA024F1E81241F0032E955 /* Exam6.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Exam6.xib; sourceTree = "<group>"; };
+		77FA02521E8126C50032E955 /* poke3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "poke3@2x.png"; sourceTree = "<group>"; };
+		77FA02531E8126C50032E955 /* poke2@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "poke2@2x.jpg"; sourceTree = "<group>"; };
+		77FA02541E8126C50032E955 /* poke1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "poke1@2x.png"; sourceTree = "<group>"; };
+		77FA02581E81271F0032E955 /* poke4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "poke4@2x.png"; sourceTree = "<group>"; };
+		77FA02591E81271F0032E955 /* poke5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "poke5@2x.png"; sourceTree = "<group>"; };
+		77FA025C1E8128460032E955 /* poke@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "poke@2x.jpg"; sourceTree = "<group>"; };
+		77FA02601E812A280032E955 /* PokeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeView.swift; sourceTree = "<group>"; };
+		77FA02621E812A370032E955 /* PokeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PokeView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +160,7 @@
 		77356DCD1E7F80FC0032E9DE /* TrainingExe1 */ = {
 			isa = PBXGroup;
 			children = (
+				77FA024D1E8124100032E955 /* Exam6 */,
 				77FA02481E811C100032E955 /* Exam5 */,
 				77FA023B1E80FF910032E955 /* Exam4 */,
 				77FA023A1E80FF800032E955 /* Exam3 */,
@@ -229,6 +250,12 @@
 		77FA023D1E80FFAE0032E955 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				77FA025C1E8128460032E955 /* poke@2x.jpg */,
+				77FA02581E81271F0032E955 /* poke4@2x.png */,
+				77FA02591E81271F0032E955 /* poke5@2x.png */,
+				77FA02521E8126C50032E955 /* poke3@2x.png */,
+				77FA02531E8126C50032E955 /* poke2@2x.jpg */,
+				77FA02541E8126C50032E955 /* poke1@2x.png */,
 				77FA02461E810D9B0032E955 /* video-icon@2x.png */,
 				77FA02441E8104840032E955 /* right-arrow@2x.png */,
 				77FA020D1E80B7280032E955 /* radio-not-selected@2x.png */,
@@ -255,6 +282,17 @@
 				77FA024A1E811C300032E955 /* DetailExam4.xib */,
 			);
 			name = Exam5;
+			sourceTree = "<group>";
+		};
+		77FA024D1E8124100032E955 /* Exam6 */ = {
+			isa = PBXGroup;
+			children = (
+				77FA024E1E81241F0032E955 /* Exam6.swift */,
+				77FA024F1E81241F0032E955 /* Exam6.xib */,
+				77FA02601E812A280032E955 /* PokeView.swift */,
+				77FA02621E812A370032E955 /* PokeView.xib */,
+			);
+			name = Exam6;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,7 +355,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77FA025B1E81271F0032E955 /* poke5@2x.png in Resources */,
 				77356DD91E7F80FC0032E9DE /* LaunchScreen.storyboard in Resources */,
+				77FA02571E8126C50032E955 /* poke1@2x.png in Resources */,
+				77FA02631E812A370032E955 /* PokeView.xib in Resources */,
 				77FA02271E80E6D50032E955 /* ca-hoi@2x.jpg in Resources */,
 				77FA020B1E80B6070032E955 /* back@2x.png in Resources */,
 				77356DD61E7F80FC0032E9DE /* Assets.xcassets in Resources */,
@@ -327,7 +368,10 @@
 				77FA024C1E811C300032E955 /* DetailExam4.xib in Resources */,
 				77FA02321E80E8BE0032E955 /* 1star@2x.png in Resources */,
 				4CA10F751E80366800D74189 /* Exam3.xib in Resources */,
+				77FA02551E8126C50032E955 /* poke3@2x.png in Resources */,
+				77FA025A1E81271F0032E955 /* poke4@2x.png in Resources */,
 				77FA02161E80BB140032E955 /* Exam3Tab2.xib in Resources */,
+				77FA02511E81241F0032E955 /* Exam6.xib in Resources */,
 				4CA10F791E80372300D74189 /* Exam4.xib in Resources */,
 				77FA021A1E80D7D30032E955 /* Exam3Tab3.xib in Resources */,
 				77FA02451E8104840032E955 /* right-arrow@2x.png in Resources */,
@@ -335,10 +379,12 @@
 				77FA02431E8103550032E955 /* Exam4Cell.xib in Resources */,
 				77FA02101E80B7280032E955 /* radio-selected@2x.png in Resources */,
 				77FA02351E80E8BE0032E955 /* 4star@2x.png in Resources */,
+				77FA025D1E8128460032E955 /* poke@2x.jpg in Resources */,
 				77FA02281E80E6D50032E955 /* pizza@2x.jpg in Resources */,
 				77FA02291E80E6D50032E955 /* hamberger@2x.jpeg in Resources */,
 				77356DED1E7FA8410032E9DE /* Exam1.xib in Resources */,
 				77356DE51E7FA5440032E9DE /* Exam2.xib in Resources */,
+				77FA02561E8126C50032E955 /* poke2@2x.jpg in Resources */,
 				77FA020F1E80B7280032E955 /* radio-not-selected@2x.png in Resources */,
 				77FA02331E80E8BE0032E955 /* 2star@2x.png in Resources */,
 				77FA022A1E80E6D50032E955 /* khoai-tay@2x.jpg in Resources */,
@@ -357,11 +403,13 @@
 				77FA021D1E80D9810032E955 /* Exam3Cell.swift in Sources */,
 				77FA023F1E81006F0032E955 /* AVResultModel.swift in Sources */,
 				4CA10F741E80366800D74189 /* Exam3.swift in Sources */,
+				77FA02611E812A280032E955 /* PokeView.swift in Sources */,
 				77FA02151E80BB140032E955 /* Exam3Tab2.swift in Sources */,
 				77FA02421E8103550032E955 /* Exam4Cell.swift in Sources */,
 				77FA02121E80BAF90032E955 /* Exam3Containner.swift in Sources */,
 				77356DCF1E7F80FC0032E9DE /* AppDelegate.swift in Sources */,
 				77356DE81E7FA7A60032E9DE /* RootViewController.swift in Sources */,
+				77FA02501E81241F0032E955 /* Exam6.swift in Sources */,
 				77356DEC1E7FA8410032E9DE /* Exam1.swift in Sources */,
 				77FA02201E80E4380032E955 /* Exam3Model.swift in Sources */,
 				77FA02191E80D7D30032E955 /* Exam3Tab3.swift in Sources */,

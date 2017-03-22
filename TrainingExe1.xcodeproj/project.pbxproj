@@ -27,6 +27,11 @@
 		7738188A1E8212E100EBF5E2 /* AddAVResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773818881E8212E100EBF5E2 /* AddAVResultViewController.swift */; };
 		7738188B1E8212E100EBF5E2 /* AddAVResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 773818891E8212E100EBF5E2 /* AddAVResultViewController.xib */; };
 		7738188E1E82130A00EBF5E2 /* TrainingExe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7738188C1E82130A00EBF5E2 /* TrainingExe.xcdatamodeld */; };
+		773818B61E82364100EBF5E2 /* Exam8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773818B41E82364100EBF5E2 /* Exam8.swift */; };
+		773818B71E82364100EBF5E2 /* Exam8.xib in Resources */ = {isa = PBXBuildFile; fileRef = 773818B51E82364100EBF5E2 /* Exam8.xib */; };
+		773818B91E8238DE00EBF5E2 /* Songs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773818B81E8238DE00EBF5E2 /* Songs.swift */; };
+		773818BC1E823C5A00EBF5E2 /* Exam8Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773818BA1E823C5A00EBF5E2 /* Exam8Cell.swift */; };
+		773818BD1E823C5A00EBF5E2 /* Exam8Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 773818BB1E823C5A00EBF5E2 /* Exam8Cell.xib */; };
 		77FA020B1E80B6070032E955 /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77FA02091E80B6070032E955 /* back@2x.png */; };
 		77FA020F1E80B7280032E955 /* radio-not-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77FA020D1E80B7280032E955 /* radio-not-selected@2x.png */; };
 		77FA02101E80B7280032E955 /* radio-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77FA020E1E80B7280032E955 /* radio-selected@2x.png */; };
@@ -101,6 +106,11 @@
 		773818881E8212E100EBF5E2 /* AddAVResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAVResultViewController.swift; sourceTree = "<group>"; };
 		773818891E8212E100EBF5E2 /* AddAVResultViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddAVResultViewController.xib; sourceTree = "<group>"; };
 		7738188D1E82130A00EBF5E2 /* TrainingExe.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TrainingExe.xcdatamodel; sourceTree = "<group>"; };
+		773818B41E82364100EBF5E2 /* Exam8.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exam8.swift; sourceTree = "<group>"; };
+		773818B51E82364100EBF5E2 /* Exam8.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Exam8.xib; sourceTree = "<group>"; };
+		773818B81E8238DE00EBF5E2 /* Songs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Songs.swift; sourceTree = "<group>"; };
+		773818BA1E823C5A00EBF5E2 /* Exam8Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exam8Cell.swift; sourceTree = "<group>"; };
+		773818BB1E823C5A00EBF5E2 /* Exam8Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Exam8Cell.xib; sourceTree = "<group>"; };
 		77FA02091E80B6070032E955 /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
 		77FA020D1E80B7280032E955 /* radio-not-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radio-not-selected@2x.png"; sourceTree = "<group>"; };
 		77FA020E1E80B7280032E955 /* radio-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radio-selected@2x.png"; sourceTree = "<group>"; };
@@ -170,6 +180,7 @@
 		77356DCD1E7F80FC0032E9DE /* TrainingExe1 */ = {
 			isa = PBXGroup;
 			children = (
+				773818B31E82362C00EBF5E2 /* Exam8 */,
 				773818831E82125C00EBF5E2 /* Exam7 */,
 				77FA024D1E8124100032E955 /* Exam6 */,
 				77FA02481E811C100032E955 /* Exam5 */,
@@ -205,6 +216,18 @@
 				7738188C1E82130A00EBF5E2 /* TrainingExe.xcdatamodeld */,
 			);
 			name = CoreData;
+			sourceTree = "<group>";
+		};
+		773818B31E82362C00EBF5E2 /* Exam8 */ = {
+			isa = PBXGroup;
+			children = (
+				773818B41E82364100EBF5E2 /* Exam8.swift */,
+				773818B51E82364100EBF5E2 /* Exam8.xib */,
+				773818B81E8238DE00EBF5E2 /* Songs.swift */,
+				773818BA1E823C5A00EBF5E2 /* Exam8Cell.swift */,
+				773818BB1E823C5A00EBF5E2 /* Exam8Cell.xib */,
+			);
+			name = Exam8;
 			sourceTree = "<group>";
 		};
 		77F013DD1E7FC5A700D5C4A2 /* Frameworks */ = {
@@ -419,6 +442,8 @@
 				77FA02561E8126C50032E955 /* poke2@2x.jpg in Resources */,
 				77FA020F1E80B7280032E955 /* radio-not-selected@2x.png in Resources */,
 				77FA02331E80E8BE0032E955 /* 2star@2x.png in Resources */,
+				773818BD1E823C5A00EBF5E2 /* Exam8Cell.xib in Resources */,
+				773818B71E82364100EBF5E2 /* Exam8.xib in Resources */,
 				773818871E8212C800EBF5E2 /* Exam7.xib in Resources */,
 				77FA022A1E80E6D50032E955 /* khoai-tay@2x.jpg in Resources */,
 				77FA02311E80E8BE0032E955 /* 0star@2x.png in Resources */,
@@ -436,12 +461,14 @@
 				77FA021D1E80D9810032E955 /* Exam3Cell.swift in Sources */,
 				77FA023F1E81006F0032E955 /* AVResultModel.swift in Sources */,
 				7738188A1E8212E100EBF5E2 /* AddAVResultViewController.swift in Sources */,
+				773818B91E8238DE00EBF5E2 /* Songs.swift in Sources */,
 				4CA10F741E80366800D74189 /* Exam3.swift in Sources */,
 				77FA02151E80BB140032E955 /* Exam3Tab2.swift in Sources */,
 				77FA02421E8103550032E955 /* Exam4Cell.swift in Sources */,
 				77FA02121E80BAF90032E955 /* Exam3Containner.swift in Sources */,
 				77356DCF1E7F80FC0032E9DE /* AppDelegate.swift in Sources */,
 				77356DE81E7FA7A60032E9DE /* RootViewController.swift in Sources */,
+				773818B61E82364100EBF5E2 /* Exam8.swift in Sources */,
 				77FA02501E81241F0032E955 /* Exam6.swift in Sources */,
 				77356DEC1E7FA8410032E9DE /* Exam1.swift in Sources */,
 				77FA02201E80E4380032E955 /* Exam3Model.swift in Sources */,
@@ -450,6 +477,7 @@
 				7738188E1E82130A00EBF5E2 /* TrainingExe.xcdatamodeld in Sources */,
 				77356DE41E7FA5440032E9DE /* Exam2.swift in Sources */,
 				77FA024B1E811C300032E955 /* DetailExam4.swift in Sources */,
+				773818BC1E823C5A00EBF5E2 /* Exam8Cell.swift in Sources */,
 				4CA10F781E80372300D74189 /* Exam4.swift in Sources */,
 				773818861E8212C800EBF5E2 /* Exam7.swift in Sources */,
 			);

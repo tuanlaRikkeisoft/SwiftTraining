@@ -32,7 +32,6 @@ class Exam8Cell: UITableViewCell {
         trackPrice.text? = String(model.trackPrice)
         trackGenreLabel.text? = model.primaryGenreName
         collectionNameLabel.text? = model.collectionName
-        th
     }
     
 }

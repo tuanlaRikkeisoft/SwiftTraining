@@ -19,4 +19,6 @@ class AVResultModel: NSObject {
         self.avValue = avValue
         self.loviValue = loviValue
     }
+
+    
 }

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class Exam4Cell: UITableViewCell {
 
@@ -32,5 +33,13 @@ class Exam4Cell: UITableViewCell {
         self.dateLabel.text? = dateFormatter.string(from: model.captureDate)
         self.avValueLabel.text? = "AV \(model.avValue.description)"
         self.loviValueLabel.text? = model.loviValue.description
+    }
+    
+    public func setEntity(_ entity: AVResult){
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy.MM.dd hh:mm"
+        self.dateLabel.text? = dateFormatter.string(from: entity.captureDate as! Date)
+        self.avValueLabel.text? = "AV \(String(entity.avValue))"
+        self.loviValueLabel.text? = String(entity.loviValue)
     }
 }

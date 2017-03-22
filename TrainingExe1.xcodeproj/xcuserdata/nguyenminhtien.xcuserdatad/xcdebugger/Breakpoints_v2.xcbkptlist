@@ -67,5 +67,68 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TrainingExe1/Exam7.swift"
+            timestampString = "511848559.060056"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "loadData()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TrainingExe1.Exam7.loadData () -&gt; ()"
+                  moduleName = "TrainingExe1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nguyenminhtien/Desktop/TrainingExe1/TrainingExe1/Exam7.swift"
+                  timestampString = "511848971.981562"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "440">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TrainingExe1.Exam7.loadData () -&gt; ()"
+                  moduleName = "TrainingExe1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nguyenminhtien/Desktop/TrainingExe1/TrainingExe1/Exam7.swift"
+                  timestampString = "511848971.983747"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "680">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TrainingExe1.Exam7.loadData () -&gt; ()"
+                  moduleName = "TrainingExe1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nguyenminhtien/Desktop/TrainingExe1/TrainingExe1/Exam7.swift"
+                  timestampString = "511848971.98603"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "705">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

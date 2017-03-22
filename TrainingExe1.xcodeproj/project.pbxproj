@@ -32,6 +32,9 @@
 		773818B91E8238DE00EBF5E2 /* Songs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773818B81E8238DE00EBF5E2 /* Songs.swift */; };
 		773818BC1E823C5A00EBF5E2 /* Exam8Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773818BA1E823C5A00EBF5E2 /* Exam8Cell.swift */; };
 		773818BD1E823C5A00EBF5E2 /* Exam8Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 773818BB1E823C5A00EBF5E2 /* Exam8Cell.xib */; };
+		77C8E2BC1E8260E400C1DCB4 /* Exam8Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C8E2BB1E8260E400C1DCB4 /* Exam8Service.swift */; };
+		77C8E2CA1E826F6500C1DCB4 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77C8E2C91E826F6500C1DCB4 /* Alamofire.framework */; };
+		77C8E2CC1E826F6A00C1DCB4 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 77C8E2C91E826F6500C1DCB4 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		77FA020B1E80B6070032E955 /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77FA02091E80B6070032E955 /* back@2x.png */; };
 		77FA020F1E80B7280032E955 /* radio-not-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77FA020D1E80B7280032E955 /* radio-not-selected@2x.png */; };
 		77FA02101E80B7280032E955 /* radio-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77FA020E1E80B7280032E955 /* radio-selected@2x.png */; };
@@ -71,12 +74,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		77F013E31E7FCA4300D5C4A2 /* Embed Frameworks */ = {
+		77C8E2C21E826D7E00C1DCB4 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				77C8E2CC1E826F6A00C1DCB4 /* Alamofire.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -111,6 +115,8 @@
 		773818B81E8238DE00EBF5E2 /* Songs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Songs.swift; sourceTree = "<group>"; };
 		773818BA1E823C5A00EBF5E2 /* Exam8Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exam8Cell.swift; sourceTree = "<group>"; };
 		773818BB1E823C5A00EBF5E2 /* Exam8Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Exam8Cell.xib; sourceTree = "<group>"; };
+		77C8E2BB1E8260E400C1DCB4 /* Exam8Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exam8Service.swift; sourceTree = "<group>"; };
+		77C8E2C91E826F6500C1DCB4 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = TrainingExe1/Alamofire.framework; sourceTree = "<group>"; };
 		77FA02091E80B6070032E955 /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
 		77FA020D1E80B7280032E955 /* radio-not-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radio-not-selected@2x.png"; sourceTree = "<group>"; };
 		77FA020E1E80B7280032E955 /* radio-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radio-selected@2x.png"; sourceTree = "<group>"; };
@@ -154,6 +160,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77C8E2CA1E826F6500C1DCB4 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +170,7 @@
 		77356DC21E7F80FB0032E9DE = {
 			isa = PBXGroup;
 			children = (
+				77C8E2C91E826F6500C1DCB4 /* Alamofire.framework */,
 				77356DCD1E7F80FC0032E9DE /* TrainingExe1 */,
 				77356DCC1E7F80FC0032E9DE /* Products */,
 				77F013DD1E7FC5A700D5C4A2 /* Frameworks */,
@@ -226,6 +234,7 @@
 				773818B81E8238DE00EBF5E2 /* Songs.swift */,
 				773818BA1E823C5A00EBF5E2 /* Exam8Cell.swift */,
 				773818BB1E823C5A00EBF5E2 /* Exam8Cell.xib */,
+				77C8E2BB1E8260E400C1DCB4 /* Exam8Service.swift */,
 			);
 			name = Exam8;
 			sourceTree = "<group>";
@@ -359,7 +368,7 @@
 				77356DC71E7F80FB0032E9DE /* Sources */,
 				77356DC81E7F80FB0032E9DE /* Frameworks */,
 				77356DC91E7F80FB0032E9DE /* Resources */,
-				77F013E31E7FCA4300D5C4A2 /* Embed Frameworks */,
+				77C8E2C21E826D7E00C1DCB4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -461,6 +470,7 @@
 				77FA021D1E80D9810032E955 /* Exam3Cell.swift in Sources */,
 				77FA023F1E81006F0032E955 /* AVResultModel.swift in Sources */,
 				7738188A1E8212E100EBF5E2 /* AddAVResultViewController.swift in Sources */,
+				77C8E2BC1E8260E400C1DCB4 /* Exam8Service.swift in Sources */,
 				773818B91E8238DE00EBF5E2 /* Songs.swift in Sources */,
 				4CA10F741E80366800D74189 /* Exam3.swift in Sources */,
 				77FA02151E80BB140032E955 /* Exam3Tab2.swift in Sources */,
@@ -597,6 +607,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/TrainingExe1",
 				);
 				INFOPLIST_FILE = TrainingExe1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -613,6 +624,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/TrainingExe1",
 				);
 				INFOPLIST_FILE = TrainingExe1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

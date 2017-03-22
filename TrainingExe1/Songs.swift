@@ -9,5 +9,11 @@
 import UIKit
 
 class Songs: NSObject {
-    
+    var artistName = String()
+    var collectionName = String()
+    var trackName = String()
+    var artworkUrl100 = String()
+    var trackPrice = Float()
+    var trackTimeMillis = Float()
+    var primaryGenreName = String()
 }

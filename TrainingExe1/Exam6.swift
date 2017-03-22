@@ -8,20 +8,13 @@
 
 import UIKit
 
-class Exam6: UIViewController {
+class Exam6: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
-    @IBOutlet weak var poke1: PokeView!
-    @IBOutlet weak var poke2: PokeView!
-    @IBOutlet weak var poke3: PokeView!
-    @IBOutlet weak var poke4: PokeView!
-    @IBOutlet weak var poke5: PokeView!
-    @IBOutlet weak var poke6: PokeView!
-    @IBOutlet weak var poke7: PokeView!
-    @IBOutlet weak var poke8: PokeView!
-    @IBOutlet weak var poke9: PokeView!
+    @IBOutlet weak var collectionView: UICollectionView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setupUI()
         self.setupAction()
     }
 
@@ -30,9 +23,36 @@ class Exam6: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func setupUI(){
+        self.collectionView.register(UINib.init(nibName: "Exam6Cell", bundle: nil), forCellWithReuseIdentifier: "Exam6Cell")
+    }
     func setupAction(){
       
     }
     
-
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
+    {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Exam6Cell", for: indexPath) as? Exam6Cell
+        return cell!
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 3
+    }
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 3
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("touch me")
+        let cell = collectionView.cellForItem(at: indexPath) as! Exam6Cell
+        cell.flipPokeAnimation()
+        
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
+        return true
+    }
 }

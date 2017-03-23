@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C35AD221E841FBA00843CDD /* Exam10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C35AD201E841FBA00843CDD /* Exam10.swift */; };
+		4C35AD231E841FBA00843CDD /* Exam10.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C35AD211E841FBA00843CDD /* Exam10.xib */; };
+		4C35AD291E84232700843CDD /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C35AD271E84232700843CDD /* LeftViewController.swift */; };
+		4C35AD2A1E84232700843CDD /* LeftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C35AD281E84232700843CDD /* LeftViewController.xib */; };
+		4C35AD2C1E84258700843CDD /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C35AD2B1E84258700843CDD /* menu@2x.png */; };
+		4C35AD2E1E8426BE00843CDD /* SlideMenuControllerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C35AD2D1E8426BE00843CDD /* SlideMenuControllerSwift.framework */; };
+		4C35AD301E8426C400843CDD /* SlideMenuControllerSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4C35AD2D1E8426BE00843CDD /* SlideMenuControllerSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4CA10F741E80366800D74189 /* Exam3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA10F721E80366800D74189 /* Exam3.swift */; };
 		4CA10F751E80366800D74189 /* Exam3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CA10F731E80366800D74189 /* Exam3.xib */; };
 		4CA10F781E80372300D74189 /* Exam4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA10F761E80372300D74189 /* Exam4.swift */; };
@@ -88,6 +95,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				77C8E2CC1E826F6A00C1DCB4 /* Alamofire.framework in Embed Frameworks */,
+				4C35AD301E8426C400843CDD /* SlideMenuControllerSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,6 +103,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4C35AD201E841FBA00843CDD /* Exam10.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exam10.swift; sourceTree = "<group>"; };
+		4C35AD211E841FBA00843CDD /* Exam10.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Exam10.xib; sourceTree = "<group>"; };
+		4C35AD271E84232700843CDD /* LeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
+		4C35AD281E84232700843CDD /* LeftViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftViewController.xib; sourceTree = "<group>"; };
+		4C35AD2B1E84258700843CDD /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@2x.png"; sourceTree = "<group>"; };
+		4C35AD2D1E8426BE00843CDD /* SlideMenuControllerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SlideMenuControllerSwift.framework; sourceTree = "<group>"; };
 		4CA10F721E80366800D74189 /* Exam3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exam3.swift; sourceTree = "<group>"; };
 		4CA10F731E80366800D74189 /* Exam3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Exam3.xib; sourceTree = "<group>"; };
 		4CA10F761E80372300D74189 /* Exam4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exam4.swift; sourceTree = "<group>"; };
@@ -175,15 +189,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				77C8E2CA1E826F6500C1DCB4 /* Alamofire.framework in Frameworks */,
+				4C35AD2E1E8426BE00843CDD /* SlideMenuControllerSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C35AD1F1E841F7900843CDD /* Exam10 */ = {
+			isa = PBXGroup;
+			children = (
+				4C35AD201E841FBA00843CDD /* Exam10.swift */,
+				4C35AD211E841FBA00843CDD /* Exam10.xib */,
+				4C35AD271E84232700843CDD /* LeftViewController.swift */,
+				4C35AD281E84232700843CDD /* LeftViewController.xib */,
+			);
+			name = Exam10;
+			sourceTree = "<group>";
+		};
 		77356DC21E7F80FB0032E9DE = {
 			isa = PBXGroup;
 			children = (
+				4C35AD2D1E8426BE00843CDD /* SlideMenuControllerSwift.framework */,
 				77C8E2C91E826F6500C1DCB4 /* Alamofire.framework */,
 				77356DCD1E7F80FC0032E9DE /* TrainingExe1 */,
 				77356DCC1E7F80FC0032E9DE /* Products */,
@@ -202,6 +229,7 @@
 		77356DCD1E7F80FC0032E9DE /* TrainingExe1 */ = {
 			isa = PBXGroup;
 			children = (
+				4C35AD1F1E841F7900843CDD /* Exam10 */,
 				773818B31E82362C00EBF5E2 /* Exam8 */,
 				773818831E82125C00EBF5E2 /* Exam7 */,
 				77FA024D1E8124100032E955 /* Exam6 */,
@@ -334,6 +362,7 @@
 		77FA023D1E80FFAE0032E955 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				4C35AD2B1E84258700843CDD /* menu@2x.png */,
 				77FA025C1E8128460032E955 /* poke@2x.jpg */,
 				77FA02581E81271F0032E955 /* poke4@2x.png */,
 				77FA02591E81271F0032E955 /* poke5@2x.png */,
@@ -452,6 +481,7 @@
 				77FA024C1E811C300032E955 /* DetailExam4.xib in Resources */,
 				77FA02321E80E8BE0032E955 /* 1star@2x.png in Resources */,
 				773818821E8204EB00EBF5E2 /* Exam6Cell.xib in Resources */,
+				4C35AD2A1E84232700843CDD /* LeftViewController.xib in Resources */,
 				4CA10F751E80366800D74189 /* Exam3.xib in Resources */,
 				77FA02551E8126C50032E955 /* poke3@2x.png in Resources */,
 				77FA025A1E81271F0032E955 /* poke4@2x.png in Resources */,
@@ -460,10 +490,12 @@
 				4CA10F791E80372300D74189 /* Exam4.xib in Resources */,
 				77FA021A1E80D7D30032E955 /* Exam3Tab3.xib in Resources */,
 				77FA02451E8104840032E955 /* right-arrow@2x.png in Resources */,
+				4C35AD2C1E84258700843CDD /* menu@2x.png in Resources */,
 				77356DE91E7FA7A60032E9DE /* RootViewController.xib in Resources */,
 				77FA02431E8103550032E955 /* Exam4Cell.xib in Resources */,
 				77FA02101E80B7280032E955 /* radio-selected@2x.png in Resources */,
 				7738188B1E8212E100EBF5E2 /* AddAVResultViewController.xib in Resources */,
+				4C35AD231E841FBA00843CDD /* Exam10.xib in Resources */,
 				77FA02351E80E8BE0032E955 /* 4star@2x.png in Resources */,
 				7748498B1E8357D100E814D8 /* Exam8Closure.xib in Resources */,
 				77FA025D1E8128460032E955 /* poke@2x.jpg in Resources */,
@@ -496,12 +528,14 @@
 				77FA023F1E81006F0032E955 /* AVResultModel.swift in Sources */,
 				7738188A1E8212E100EBF5E2 /* AddAVResultViewController.swift in Sources */,
 				77C8E2BC1E8260E400C1DCB4 /* Exam8Service.swift in Sources */,
+				4C35AD291E84232700843CDD /* LeftViewController.swift in Sources */,
 				773818B91E8238DE00EBF5E2 /* Songs.swift in Sources */,
 				4CA10F741E80366800D74189 /* Exam3.swift in Sources */,
 				77FA02151E80BB140032E955 /* Exam3Tab2.swift in Sources */,
 				77FA02421E8103550032E955 /* Exam4Cell.swift in Sources */,
 				77FA02121E80BAF90032E955 /* Exam3Containner.swift in Sources */,
 				7748498E1E8357DE00E814D8 /* Exam8Delegate.swift in Sources */,
+				4C35AD221E841FBA00843CDD /* Exam10.swift in Sources */,
 				77356DCF1E7F80FC0032E9DE /* AppDelegate.swift in Sources */,
 				77356DE81E7FA7A60032E9DE /* RootViewController.swift in Sources */,
 				773818B61E82364100EBF5E2 /* Exam8.swift in Sources */,
@@ -637,6 +671,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 					"$(PROJECT_DIR)/TrainingExe1",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = TrainingExe1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -655,6 +690,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 					"$(PROJECT_DIR)/TrainingExe1",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = TrainingExe1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

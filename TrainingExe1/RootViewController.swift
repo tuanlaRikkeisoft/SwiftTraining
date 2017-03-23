@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SlideMenuControllerSwift
 
 class RootViewController: UIViewController {
 
@@ -52,5 +53,12 @@ class RootViewController: UIViewController {
         self.navigationController?.pushViewController(RootExam8(), animated: true)
     }
     @IBAction func actionExam10(_ sender: Any) {
+        let mainViewController = Exam10()
+        let leftViewController = LeftViewController()
+        SlideMenuOptions.leftViewWidth = 50
+        SlideMenuOptions.contentViewScale = 0.50
+        
+        let slideMenuController = SlideMenuController(mainViewController: mainViewController, leftMenuViewController: leftViewController)
+        (UIApplication.shared.delegate as! AppDelegate).window?.rootViewController = slideMenuController
     }
 }

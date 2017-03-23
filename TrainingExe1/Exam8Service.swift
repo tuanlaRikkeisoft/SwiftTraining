@@ -9,7 +9,18 @@
 import UIKit
 import Alamofire
 
-class Exam8Service: NSObject {
+protocol Exam8ServiceDelegate {
+    func getDataCompleted(data:[Songs],message: String)
+}
+
+final class Exam8Service {
+    var delegate: Exam8ServiceDelegate?
+    let getSongCompletedNotification = "getSongCompletedNotification"
+    
+    static let sharedInstance: Exam8Service = Exam8Service()
+    private init(){
+        print("Initilization...")
+    }
     public func getListSongWithClosure(key: String, completion: @escaping (_ message: String,_ data: [Songs])-> Void) {
        
         let params = ["term":key,"media":"music"]
@@ -29,7 +40,7 @@ class Exam8Service: NSObject {
             for item in results!{
                 let song = Songs()
                 song.artistName = item["artistName"] as! String
-                song.collectionName = item["collectionName"] as! String
+                //song.collectionName = item["collectionName"] as String
                 song.trackName = item["trackName"] as! String
                 song.artworkUrl100 = item["artworkUrl100"] as! String
                 //song.trackPrice = item["trackPrice"] as! Float
@@ -39,6 +50,69 @@ class Exam8Service: NSObject {
             }
            
             completion(String(),listSongs)
+        }
+    }
+    
+    public func getListSongWithDelegate(key: String){
+        let params = ["term":key,"media":"music"]
+        
+        Alamofire.request(URL.init(string: "https://itunes.apple.com/search")!, method: .get, parameters: params, encoding: URLEncoding.default, headers: nil).validate().responseJSON { (response) -> Void in
+            guard response.result.isSuccess else {
+                print("Error while fetching remote rooms: \(response.result.error)")
+                self.delegate?.getDataCompleted(data: [], message: (response.result.error?.localizedDescription)!)
+                return
+            }
+            
+            var listSongs = [Songs]()
+            
+            let responseItem = response.result.value as? [String: Any]
+            let results = responseItem?["results"] as? [[String: Any]]
+            
+            for item in results!{
+                let song = Songs()
+                song.artistName = item["artistName"] as! String
+                //song.collectionName = item["collectionName"] as String
+                song.trackName = item["trackName"] as! String
+                song.artworkUrl100 = item["artworkUrl100"] as! String
+                //song.trackPrice = item["trackPrice"] as! Float
+                //song.trackTimeMillis = item["trackTimeMillis"] as! Float
+                song.primaryGenreName = item["primaryGenreName"] as! String
+                listSongs.append(song)
+            }
+            self.delegate?.getDataCompleted(data: listSongs, message: "")
+        }
+    }
+    
+    public func getListSongWithNotification(key : String){
+        let params = ["term":key,"media":"music"]
+        
+        Alamofire.request(URL.init(string: "https://itunes.apple.com/search")!, method: .get, parameters: params, encoding: URLEncoding.default, headers: nil).validate().responseJSON { (response) -> Void in
+            guard response.result.isSuccess else {
+                print("Error while fetching remote rooms: \(response.result.error)")
+                
+                return
+            }
+            
+            var listSongs = [Songs]()
+            
+            let responseItem = response.result.value as? [String: Any]
+            let results = responseItem?["results"] as? [[String: Any]]
+            
+            for item in results!{
+                let song = Songs()
+                song.artistName = item["artistName"] as! String
+                //song.collectionName = item["collectionName"] as String
+                song.trackName = item["trackName"] as! String
+                song.artworkUrl100 = item["artworkUrl100"] as! String
+                //song.trackPrice = item["trackPrice"] as! Float
+                //song.trackTimeMillis = item["trackTimeMillis"] as! Float
+                song.primaryGenreName = item["primaryGenreName"] as! String
+                listSongs.append(song)
+            }
+            let dictData: [String:Any] = ["listSongs":listSongs]
+            
+            NotificationCenter.default.post(name: NSNotification.Name.init(rawValue: self.getSongCompletedNotification), object: nil, userInfo: dictData)
+            
         }
     }
 }

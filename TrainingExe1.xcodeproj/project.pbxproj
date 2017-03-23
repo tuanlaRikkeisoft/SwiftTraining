@@ -28,10 +28,17 @@
 		7738188B1E8212E100EBF5E2 /* AddAVResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 773818891E8212E100EBF5E2 /* AddAVResultViewController.xib */; };
 		7738188E1E82130A00EBF5E2 /* TrainingExe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7738188C1E82130A00EBF5E2 /* TrainingExe.xcdatamodeld */; };
 		773818B61E82364100EBF5E2 /* Exam8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773818B41E82364100EBF5E2 /* Exam8.swift */; };
-		773818B71E82364100EBF5E2 /* Exam8.xib in Resources */ = {isa = PBXBuildFile; fileRef = 773818B51E82364100EBF5E2 /* Exam8.xib */; };
 		773818B91E8238DE00EBF5E2 /* Songs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773818B81E8238DE00EBF5E2 /* Songs.swift */; };
 		773818BC1E823C5A00EBF5E2 /* Exam8Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773818BA1E823C5A00EBF5E2 /* Exam8Cell.swift */; };
 		773818BD1E823C5A00EBF5E2 /* Exam8Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 773818BB1E823C5A00EBF5E2 /* Exam8Cell.xib */; };
+		7748498A1E8357D100E814D8 /* Exam8Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774849881E8357D100E814D8 /* Exam8Closure.swift */; };
+		7748498B1E8357D100E814D8 /* Exam8Closure.xib in Resources */ = {isa = PBXBuildFile; fileRef = 774849891E8357D100E814D8 /* Exam8Closure.xib */; };
+		7748498E1E8357DE00E814D8 /* Exam8Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7748498C1E8357DE00E814D8 /* Exam8Delegate.swift */; };
+		7748498F1E8357DE00E814D8 /* Exam8Delegate.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7748498D1E8357DE00E814D8 /* Exam8Delegate.xib */; };
+		774849921E83581100E814D8 /* Exam8Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774849901E83581100E814D8 /* Exam8Notification.swift */; };
+		774849931E83581100E814D8 /* Exam8Notification.xib in Resources */ = {isa = PBXBuildFile; fileRef = 774849911E83581100E814D8 /* Exam8Notification.xib */; };
+		774849961E835A6600E814D8 /* RootExam8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774849941E835A6600E814D8 /* RootExam8.swift */; };
+		774849971E835A6600E814D8 /* RootExam8.xib in Resources */ = {isa = PBXBuildFile; fileRef = 774849951E835A6600E814D8 /* RootExam8.xib */; };
 		77C8E2BC1E8260E400C1DCB4 /* Exam8Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C8E2BB1E8260E400C1DCB4 /* Exam8Service.swift */; };
 		77C8E2CA1E826F6500C1DCB4 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77C8E2C91E826F6500C1DCB4 /* Alamofire.framework */; };
 		77C8E2CC1E826F6A00C1DCB4 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 77C8E2C91E826F6500C1DCB4 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -111,10 +118,17 @@
 		773818891E8212E100EBF5E2 /* AddAVResultViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddAVResultViewController.xib; sourceTree = "<group>"; };
 		7738188D1E82130A00EBF5E2 /* TrainingExe.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TrainingExe.xcdatamodel; sourceTree = "<group>"; };
 		773818B41E82364100EBF5E2 /* Exam8.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exam8.swift; sourceTree = "<group>"; };
-		773818B51E82364100EBF5E2 /* Exam8.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Exam8.xib; sourceTree = "<group>"; };
 		773818B81E8238DE00EBF5E2 /* Songs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Songs.swift; sourceTree = "<group>"; };
 		773818BA1E823C5A00EBF5E2 /* Exam8Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exam8Cell.swift; sourceTree = "<group>"; };
 		773818BB1E823C5A00EBF5E2 /* Exam8Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Exam8Cell.xib; sourceTree = "<group>"; };
+		774849881E8357D100E814D8 /* Exam8Closure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exam8Closure.swift; sourceTree = "<group>"; };
+		774849891E8357D100E814D8 /* Exam8Closure.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Exam8Closure.xib; sourceTree = "<group>"; };
+		7748498C1E8357DE00E814D8 /* Exam8Delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exam8Delegate.swift; sourceTree = "<group>"; };
+		7748498D1E8357DE00E814D8 /* Exam8Delegate.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Exam8Delegate.xib; sourceTree = "<group>"; };
+		774849901E83581100E814D8 /* Exam8Notification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exam8Notification.swift; sourceTree = "<group>"; };
+		774849911E83581100E814D8 /* Exam8Notification.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Exam8Notification.xib; sourceTree = "<group>"; };
+		774849941E835A6600E814D8 /* RootExam8.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootExam8.swift; sourceTree = "<group>"; };
+		774849951E835A6600E814D8 /* RootExam8.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootExam8.xib; sourceTree = "<group>"; };
 		77C8E2BB1E8260E400C1DCB4 /* Exam8Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exam8Service.swift; sourceTree = "<group>"; };
 		77C8E2C91E826F6500C1DCB4 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = TrainingExe1/Alamofire.framework; sourceTree = "<group>"; };
 		77FA02091E80B6070032E955 /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
@@ -229,12 +243,19 @@
 		773818B31E82362C00EBF5E2 /* Exam8 */ = {
 			isa = PBXGroup;
 			children = (
+				774849941E835A6600E814D8 /* RootExam8.swift */,
+				774849951E835A6600E814D8 /* RootExam8.xib */,
 				773818B41E82364100EBF5E2 /* Exam8.swift */,
-				773818B51E82364100EBF5E2 /* Exam8.xib */,
 				773818B81E8238DE00EBF5E2 /* Songs.swift */,
 				773818BA1E823C5A00EBF5E2 /* Exam8Cell.swift */,
 				773818BB1E823C5A00EBF5E2 /* Exam8Cell.xib */,
 				77C8E2BB1E8260E400C1DCB4 /* Exam8Service.swift */,
+				774849881E8357D100E814D8 /* Exam8Closure.swift */,
+				774849891E8357D100E814D8 /* Exam8Closure.xib */,
+				7748498C1E8357DE00E814D8 /* Exam8Delegate.swift */,
+				7748498D1E8357DE00E814D8 /* Exam8Delegate.xib */,
+				774849901E83581100E814D8 /* Exam8Notification.swift */,
+				774849911E83581100E814D8 /* Exam8Notification.xib */,
 			);
 			name = Exam8;
 			sourceTree = "<group>";
@@ -419,6 +440,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				77FA025B1E81271F0032E955 /* poke5@2x.png in Resources */,
+				774849971E835A6600E814D8 /* RootExam8.xib in Resources */,
 				77356DD91E7F80FC0032E9DE /* LaunchScreen.storyboard in Resources */,
 				77FA02571E8126C50032E955 /* poke1@2x.png in Resources */,
 				77FA02271E80E6D50032E955 /* ca-hoi@2x.jpg in Resources */,
@@ -443,7 +465,9 @@
 				77FA02101E80B7280032E955 /* radio-selected@2x.png in Resources */,
 				7738188B1E8212E100EBF5E2 /* AddAVResultViewController.xib in Resources */,
 				77FA02351E80E8BE0032E955 /* 4star@2x.png in Resources */,
+				7748498B1E8357D100E814D8 /* Exam8Closure.xib in Resources */,
 				77FA025D1E8128460032E955 /* poke@2x.jpg in Resources */,
+				7748498F1E8357DE00E814D8 /* Exam8Delegate.xib in Resources */,
 				77FA02281E80E6D50032E955 /* pizza@2x.jpg in Resources */,
 				77FA02291E80E6D50032E955 /* hamberger@2x.jpeg in Resources */,
 				77356DED1E7FA8410032E9DE /* Exam1.xib in Resources */,
@@ -452,7 +476,7 @@
 				77FA020F1E80B7280032E955 /* radio-not-selected@2x.png in Resources */,
 				77FA02331E80E8BE0032E955 /* 2star@2x.png in Resources */,
 				773818BD1E823C5A00EBF5E2 /* Exam8Cell.xib in Resources */,
-				773818B71E82364100EBF5E2 /* Exam8.xib in Resources */,
+				774849931E83581100E814D8 /* Exam8Notification.xib in Resources */,
 				773818871E8212C800EBF5E2 /* Exam7.xib in Resources */,
 				77FA022A1E80E6D50032E955 /* khoai-tay@2x.jpg in Resources */,
 				77FA02311E80E8BE0032E955 /* 0star@2x.png in Resources */,
@@ -467,6 +491,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				774849961E835A6600E814D8 /* RootExam8.swift in Sources */,
 				77FA021D1E80D9810032E955 /* Exam3Cell.swift in Sources */,
 				77FA023F1E81006F0032E955 /* AVResultModel.swift in Sources */,
 				7738188A1E8212E100EBF5E2 /* AddAVResultViewController.swift in Sources */,
@@ -476,11 +501,14 @@
 				77FA02151E80BB140032E955 /* Exam3Tab2.swift in Sources */,
 				77FA02421E8103550032E955 /* Exam4Cell.swift in Sources */,
 				77FA02121E80BAF90032E955 /* Exam3Containner.swift in Sources */,
+				7748498E1E8357DE00E814D8 /* Exam8Delegate.swift in Sources */,
 				77356DCF1E7F80FC0032E9DE /* AppDelegate.swift in Sources */,
 				77356DE81E7FA7A60032E9DE /* RootViewController.swift in Sources */,
 				773818B61E82364100EBF5E2 /* Exam8.swift in Sources */,
 				77FA02501E81241F0032E955 /* Exam6.swift in Sources */,
+				7748498A1E8357D100E814D8 /* Exam8Closure.swift in Sources */,
 				77356DEC1E7FA8410032E9DE /* Exam1.swift in Sources */,
+				774849921E83581100E814D8 /* Exam8Notification.swift in Sources */,
 				77FA02201E80E4380032E955 /* Exam3Model.swift in Sources */,
 				773818811E8204EB00EBF5E2 /* Exam6Cell.swift in Sources */,
 				77FA02191E80D7D30032E955 /* Exam3Tab3.swift in Sources */,
@@ -604,6 +632,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -621,6 +650,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",

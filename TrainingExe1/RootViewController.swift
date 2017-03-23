@@ -45,11 +45,11 @@ class RootViewController: UIViewController {
         self.navigationController?.pushViewController(Exam7(), animated: true)
     }
     @IBAction func actionExam8(_ sender: Any) {
-        self.navigationController?.pushViewController(Exam8(), animated: true)
+        self.navigationController?.pushViewController(RootExam8(), animated: true)
     }
     
     @IBAction func actionExam9(_ sender: Any) {
-        self.navigationController?.pushViewController(Exam8(), animated: true)
+        self.navigationController?.pushViewController(RootExam8(), animated: true)
     }
     @IBAction func actionExam10(_ sender: Any) {
     }

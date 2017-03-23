@@ -13,7 +13,7 @@ class Exam8: UIViewController, UISearchBarDelegate, UITableViewDelegate, UITable
     @IBOutlet weak var tableView: UITableView!
     
     var songs = [Songs]()
-    let service = Exam8Service()
+    let service = Exam8Service.sharedInstance
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,14 +45,12 @@ class Exam8: UIViewController, UISearchBarDelegate, UITableViewDelegate, UITable
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        self.loadingIndicator(true)
-        service.getListSongWithClosure(key: searchBar.text!.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)) { (message, data) in
-            self.songs = data
-            self.tableView.reloadData()
-            self.loadingIndicator(false)
-        }
+        self.search((searchBar.text?.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines))!)
     }
     
+    func search(_ keyString: String){
+        fatalError("Must Override")
+    }
     func loadingIndicator(_ show: Bool) {
         let tag = 1
         if show {

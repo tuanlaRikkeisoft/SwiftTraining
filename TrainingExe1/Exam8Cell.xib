@@ -16,7 +16,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="89"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="T58-Fz-z0Q">
@@ -76,7 +76,7 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="collectionNameLabel" destination="7pI-k7-fan" id="NcE-oF-W32"/>
-                <outlet property="thumbImageView" destination="T58-Fz-z0Q" id="ksb-L7-l2K"/>
+                <outlet property="thumbImageView" destination="T58-Fz-z0Q" id="0XX-ws-b20"/>
                 <outlet property="trackGenreLabel" destination="tlX-Xk-KWF" id="odO-bH-4M9"/>
                 <outlet property="trackNameLabel" destination="Anc-Ld-rLu" id="LDt-nE-mhU"/>
                 <outlet property="trackPrice" destination="TMq-08-9lo" id="GhM-Ke-9fL"/>

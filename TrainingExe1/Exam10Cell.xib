@@ -45,7 +45,7 @@
             <connections>
                 <outlet property="title" destination="vMT-XA-0jy" id="0Rh-sN-lej"/>
             </connections>
-            <point key="canvasLocation" x="-165" y="39"/>
+            <point key="canvasLocation" x="13" y="45"/>
         </tableViewCell>
     </objects>
 </document>

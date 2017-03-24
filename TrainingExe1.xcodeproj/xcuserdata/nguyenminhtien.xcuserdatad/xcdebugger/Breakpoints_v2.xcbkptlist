@@ -90,7 +90,7 @@
                   moduleName = "TrainingExe1"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/nguyenminhtien/Desktop/TrainingExe1/TrainingExe1/Exam7.swift"
-                  timestampString = "512015398.920943"
+                  timestampString = "512035842.361009"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "44"
@@ -105,7 +105,7 @@
                   moduleName = "TrainingExe1"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/nguyenminhtien/Desktop/TrainingExe1/TrainingExe1/Exam7.swift"
-                  timestampString = "512015398.923425"
+                  timestampString = "512035842.363353"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "44"
@@ -120,7 +120,7 @@
                   moduleName = "TrainingExe1"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/nguyenminhtien/Desktop/TrainingExe1/TrainingExe1/Exam7.swift"
-                  timestampString = "512015398.926714"
+                  timestampString = "512035842.365657"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "44"
@@ -185,7 +185,7 @@
                   moduleName = "TrainingExe1"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/nguyenminhtien/Desktop/TrainingExe1/TrainingExe1/Exam8Service.swift"
-                  timestampString = "512015398.93877"
+                  timestampString = "512035842.376041"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "62"
@@ -200,7 +200,7 @@
                   moduleName = "TrainingExe1"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/nguyenminhtien/Desktop/TrainingExe1/TrainingExe1/Exam8Service.swift"
-                  timestampString = "512015398.940789"
+                  timestampString = "512035842.377321"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "62"
@@ -239,6 +239,38 @@
             startingLineNumber = "52"
             endingLineNumber = "52"
             landmarkName = "search(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TrainingExe1/Exam10.swift"
+            timestampString = "512032971.630499"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "willMoveToPage(controller:index:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TrainingExe1/Exam10.swift"
+            timestampString = "512032971.630499"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "didMoveToPage(controller:index:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -15,9 +15,11 @@ class Tab1: BaseTab {
     }
     
     override func loadData() {
-        service.getListDataWithClosure(key: self.key, type: "musicvideo") { (message, data) in
+        self.activityIndicator.startAnimating()
+        service.getListDataWithClosure(key: self.key, type: "musicVideo") { (message, data) in
             self.medias = data
             self.tableView.reloadData()
+            self.activityIndicator.stopAnimating()
         }
     }
 }

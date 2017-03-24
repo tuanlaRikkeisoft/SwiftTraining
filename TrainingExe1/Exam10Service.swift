@@ -29,20 +29,21 @@ final class Exam10Service: NSObject {
                 return
             }
             
-            var listSongs = [MediaModel]()
+            var listMedias = [MediaModel]()
             
             let responseItem = response.result.value as? [String: Any]
             let results = responseItem?["results"] as? [[String: Any]]
             
             for item in results!{
-                let song = MediaModel()
-                song.artistName = item["artistName"] as! String
-                song.trackName = item["trackName"] as! String
-                song.thumbImage = item["artworkUrl100"] as! String
-                listSongs.append(song)
+                let media = MediaModel()
+                media.artistName = item["artistName"] as? String
+                media.trackName = item["trackName"] as? String
+                media.thumbImage = item["artworkUrl100"] as? String
+                listMedias.append(media)
             }
-            
-            completion(String(),listSongs)
+            DispatchQueue.main.async {
+                completion(String(),listMedias)
+            }
         }
     }
 

@@ -77,6 +77,9 @@
 		77F117291E8507F900949193 /* Tab4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77F117271E8507F900949193 /* Tab4.xib */; };
 		77F1172C1E85080200949193 /* Tab5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F1172A1E85080200949193 /* Tab5.swift */; };
 		77F1172D1E85080200949193 /* Tab5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77F1172B1E85080200949193 /* Tab5.xib */; };
+		77F117501E85203C00949193 /* UIImageView+AsyncLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F1174F1E85203C00949193 /* UIImageView+AsyncLoad.swift */; };
+		77F117521E85204500949193 /* ImageDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F117511E85204500949193 /* ImageDownloadManager.swift */; };
+		77F117541E85208200949193 /* CircleLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F117531E85208200949193 /* CircleLoading.swift */; };
 		77FA020B1E80B6070032E955 /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77FA02091E80B6070032E955 /* back@2x.png */; };
 		77FA020F1E80B7280032E955 /* radio-not-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77FA020D1E80B7280032E955 /* radio-not-selected@2x.png */; };
 		77FA02101E80B7280032E955 /* radio-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77FA020E1E80B7280032E955 /* radio-selected@2x.png */; };
@@ -202,6 +205,9 @@
 		77F117271E8507F900949193 /* Tab4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Tab4.xib; sourceTree = "<group>"; };
 		77F1172A1E85080200949193 /* Tab5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab5.swift; sourceTree = "<group>"; };
 		77F1172B1E85080200949193 /* Tab5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Tab5.xib; sourceTree = "<group>"; };
+		77F1174F1E85203C00949193 /* UIImageView+AsyncLoad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+AsyncLoad.swift"; sourceTree = "<group>"; };
+		77F117511E85204500949193 /* ImageDownloadManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloadManager.swift; sourceTree = "<group>"; };
+		77F117531E85208200949193 /* CircleLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleLoading.swift; sourceTree = "<group>"; };
 		77FA02091E80B6070032E955 /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
 		77FA020D1E80B7280032E955 /* radio-not-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radio-not-selected@2x.png"; sourceTree = "<group>"; };
 		77FA020E1E80B7280032E955 /* radio-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radio-selected@2x.png"; sourceTree = "<group>"; };
@@ -308,6 +314,8 @@
 		77356DCD1E7F80FC0032E9DE /* TrainingExe1 */ = {
 			isa = PBXGroup;
 			children = (
+				77F117531E85208200949193 /* CircleLoading.swift */,
+				77F1174E1E85202F00949193 /* Load Image */,
 				775BBE231E84DF3500F61595 /* ScrollTabBar */,
 				4C35AD1F1E841F7900843CDD /* Exam10 */,
 				773818B31E82362C00EBF5E2 /* Exam8 */,
@@ -388,6 +396,15 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		77F1174E1E85202F00949193 /* Load Image */ = {
+			isa = PBXGroup;
+			children = (
+				77F117511E85204500949193 /* ImageDownloadManager.swift */,
+				77F1174F1E85203C00949193 /* UIImageView+AsyncLoad.swift */,
+			);
+			name = "Load Image";
 			sourceTree = "<group>";
 		};
 		77FA02371E80FF570032E955 /* AppDelegate */ = {
@@ -663,13 +680,16 @@
 				77FA02201E80E4380032E955 /* Exam3Model.swift in Sources */,
 				775BBE311E84DF4A00F61595 /* MenuItemView.swift in Sources */,
 				773818811E8204EB00EBF5E2 /* Exam6Cell.swift in Sources */,
+				77F117541E85208200949193 /* CircleLoading.swift in Sources */,
 				77FA02191E80D7D30032E955 /* Exam3Tab3.swift in Sources */,
+				77F117521E85204500949193 /* ImageDownloadManager.swift in Sources */,
 				7738188E1E82130A00EBF5E2 /* TrainingExe.xcdatamodeld in Sources */,
 				77356DE41E7FA5440032E9DE /* Exam2.swift in Sources */,
 				77FA024B1E811C300032E955 /* DetailExam4.swift in Sources */,
 				773818BC1E823C5A00EBF5E2 /* Exam8Cell.swift in Sources */,
 				775BBDD51E84B67400F61595 /* FirstViewController.swift in Sources */,
 				77F117161E85045300949193 /* Exam10MediaCell.swift in Sources */,
+				77F117501E85203C00949193 /* UIImageView+AsyncLoad.swift in Sources */,
 				775BBE2C1E84DF4A00F61595 /* CAPSPageMenu+Options.swift in Sources */,
 				77F1172C1E85080200949193 /* Tab5.swift in Sources */,
 				4CA10F781E80372300D74189 /* Exam4.swift in Sources */,

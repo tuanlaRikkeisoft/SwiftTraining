@@ -39,17 +39,15 @@ final class Exam8Service {
 
             for item in results!{
                 let song = Songs()
-                song.artistName = item["artistName"] as! String
-                //song.collectionName = item["collectionName"] as String
-                song.trackName = item["trackName"] as! String
-                song.artworkUrl100 = item["artworkUrl100"] as! String
-                //song.trackPrice = item["trackPrice"] as! Float
-                //song.trackTimeMillis = item["trackTimeMillis"] as! Float
-                song.primaryGenreName = item["primaryGenreName"] as! String
+                song.artistName = item["artistName"] as? String
+                song.trackName = item["trackName"] as? String
+                song.artworkUrl100 = item["artworkUrl100"] as? String
                 listSongs.append(song)
             }
-           
-            completion(String(),listSongs)
+            DispatchQueue.main.async {
+                completion(String(),listSongs)
+
+            }
         }
     }
     
@@ -70,16 +68,14 @@ final class Exam8Service {
             
             for item in results!{
                 let song = Songs()
-                song.artistName = item["artistName"] as! String
-                //song.collectionName = item["collectionName"] as String
-                song.trackName = item["trackName"] as! String
-                song.artworkUrl100 = item["artworkUrl100"] as! String
-                //song.trackPrice = item["trackPrice"] as! Float
-                //song.trackTimeMillis = item["trackTimeMillis"] as! Float
-                song.primaryGenreName = item["primaryGenreName"] as! String
+                song.artistName = item["artistName"] as? String
+                song.trackName = item["trackName"] as? String
+                song.artworkUrl100 = item["artworkUrl100"] as? String
                 listSongs.append(song)
             }
-            self.delegate?.getDataCompleted(data: listSongs, message: "")
+            DispatchQueue.main.async {
+                self.delegate?.getDataCompleted(data: listSongs, message: "")
+            }
         }
     }
     
@@ -100,18 +96,16 @@ final class Exam8Service {
             
             for item in results!{
                 let song = Songs()
-                song.artistName = item["artistName"] as! String
-                //song.collectionName = item["collectionName"] as String
-                song.trackName = item["trackName"] as! String
-                song.artworkUrl100 = item["artworkUrl100"] as! String
-                //song.trackPrice = item["trackPrice"] as! Float
-                //song.trackTimeMillis = item["trackTimeMillis"] as! Float
-                song.primaryGenreName = item["primaryGenreName"] as! String
+                song.artistName = item["artistName"] as? String
+                song.trackName = item["trackName"] as? String
+                song.artworkUrl100 = item["artworkUrl100"] as? String
                 listSongs.append(song)
             }
             let dictData: [String:Any] = ["listSongs":listSongs]
             
-            NotificationCenter.default.post(name: NSNotification.Name.init(rawValue: self.getSongCompletedNotification), object: nil, userInfo: dictData)
+            DispatchQueue.main.async {
+                NotificationCenter.default.post(name: NSNotification.Name.init(rawValue: self.getSongCompletedNotification), object: nil, userInfo: dictData)
+            }
             
         }
     }

@@ -10,8 +10,8 @@ import UIKit
 
 class MediaModel: NSObject {
     
-    var trackName = String()
-    var artistName =  String()
-    var thumbImage = String()
+    var trackName : String?
+    var artistName : String?
+    var thumbImage : String?
     
 }

@@ -90,7 +90,7 @@
                   moduleName = "TrainingExe1"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/nguyenminhtien/Desktop/TrainingExe1/TrainingExe1/Exam7.swift"
-                  timestampString = "512035842.361009"
+                  timestampString = "512042526.686673"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "44"
@@ -105,7 +105,7 @@
                   moduleName = "TrainingExe1"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/nguyenminhtien/Desktop/TrainingExe1/TrainingExe1/Exam7.swift"
-                  timestampString = "512035842.363353"
+                  timestampString = "512042526.68886"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "44"
@@ -120,7 +120,7 @@
                   moduleName = "TrainingExe1"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/nguyenminhtien/Desktop/TrainingExe1/TrainingExe1/Exam7.swift"
-                  timestampString = "512035842.365657"
+                  timestampString = "512042526.690777"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "44"
@@ -153,27 +153,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TrainingExe1/Exam8Service.swift"
-            timestampString = "511928971.514092"
+            timestampString = "512041758.607737"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
-            landmarkName = "getListSongWithDelegate(key:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TrainingExe1/Exam8Service.swift"
-            timestampString = "511928971.514092"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
             landmarkName = "getListSongWithDelegate(key:)"
             landmarkType = "7">
             <Locations>
@@ -185,12 +169,12 @@
                   moduleName = "TrainingExe1"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/nguyenminhtien/Desktop/TrainingExe1/TrainingExe1/Exam8Service.swift"
-                  timestampString = "512035842.376041"
+                  timestampString = "512042526.698341"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "62"
-                  endingLineNumber = "62"
-                  offsetFromSymbolStart = "4912">
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "4979">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -200,12 +184,12 @@
                   moduleName = "TrainingExe1"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/nguyenminhtien/Desktop/TrainingExe1/TrainingExe1/Exam8Service.swift"
-                  timestampString = "512035842.377321"
+                  timestampString = "512042526.699545"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "62"
-                  endingLineNumber = "62"
-                  offsetFromSymbolStart = "6048">
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "6116">
                </Location>
             </Locations>
          </BreakpointContent>

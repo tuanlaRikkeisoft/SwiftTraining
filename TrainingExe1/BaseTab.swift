@@ -11,7 +11,10 @@ import UIKit
 class BaseTab: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var tableView: UITableView!
+    let circleLoading = CircleLoading()
+    var activityIndicator = UIActivityIndicatorView()
 
+    
     let service = Exam10Service.sharedInstance
     var medias = [MediaModel]()
     let key = "sex"

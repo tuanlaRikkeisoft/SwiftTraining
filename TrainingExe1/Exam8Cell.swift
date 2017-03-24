@@ -27,24 +27,10 @@ class Exam8Cell: UITableViewCell {
     }
     
     public func setModel(_ model: Songs){
-        thumbImageView.downloadImageFrom(link:model.artworkUrl100,contentMode: UIViewContentMode.scaleAspectFit)
-        trackNameLabel.text? = model.trackName
-        trackPrice.text? = String(model.trackPrice)
-        trackGenreLabel.text? = model.primaryGenreName
-        collectionNameLabel.text? = model.artistName
+        trackNameLabel.text? = model.trackName!
+        collectionNameLabel.text? = model.artistName!
+        self.thumbImageView.setImageFrom(imageURLString: model.artworkUrl100!, completionHandler: nil)
     }
     
-}
-
-extension UIImageView {
-    func downloadImageFrom(link:String, contentMode: UIViewContentMode) {
-        URLSession.shared.dataTask( with: NSURL(string:link)! as URL, completionHandler: {
-            (data, response, error) -> Void in
-            DispatchQueue.main.async {
-                self.contentMode =  contentMode
-                if let data = data { self.image = UIImage(data: data) }
-            }
-        }).resume()
-    }
 }
 

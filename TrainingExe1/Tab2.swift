@@ -15,9 +15,11 @@ class Tab2: BaseTab {
     }
 
     override func loadData() {
+        self.circleLoading.start()
         service.getListDataWithClosure(key: self.key, type: "movie") { (message, data) in
             self.medias = data
             self.tableView.reloadData()
+            self.circleLoading.stop()
         }
     }
 }

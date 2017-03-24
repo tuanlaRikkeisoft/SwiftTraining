@@ -15,9 +15,11 @@ class Tab4: BaseTab {
     }
     
     override func loadData() {
+        self.circleLoading.start()
         service.getListDataWithClosure(key: self.key, type: "audiobook") { (message, data) in
             self.medias = data
             self.tableView.reloadData()
+            self.circleLoading.stop()
         }
     }
 }

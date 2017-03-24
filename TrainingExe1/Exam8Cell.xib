@@ -27,25 +27,13 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Anc-Ld-rLu">
-                        <rect key="frame" x="86" y="10" width="42" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TMq-08-9lo">
-                        <rect key="frame" x="270" y="10" width="42" height="21"/>
+                        <rect key="frame" x="86" y="10" width="226" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7pI-k7-fan">
-                        <rect key="frame" x="86" y="59" width="42" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tlX-Xk-KWF">
-                        <rect key="frame" x="270" y="59" width="42" height="21"/>
+                        <rect key="frame" x="86" y="59" width="226" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -59,27 +47,23 @@
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="tlX-Xk-KWF" firstAttribute="trailing" secondItem="TMq-08-9lo" secondAttribute="trailing" id="0u4-NF-XQR"/>
                     <constraint firstAttribute="leadingMargin" secondItem="T58-Fz-z0Q" secondAttribute="leading" id="55F-NE-qgz"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="7pI-k7-fan" secondAttribute="trailing" id="CaI-XG-1hX"/>
                     <constraint firstAttribute="trailingMargin" secondItem="GdH-cX-jit" secondAttribute="trailing" constant="-8" id="EM6-Yh-rhi"/>
                     <constraint firstItem="Anc-Ld-rLu" firstAttribute="leading" secondItem="T58-Fz-z0Q" secondAttribute="trailing" constant="8" id="GhE-Ve-o5G"/>
                     <constraint firstItem="GdH-cX-jit" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="Iw6-Ep-436"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="TMq-08-9lo" secondAttribute="trailing" id="SgF-ca-z9s"/>
-                    <constraint firstItem="tlX-Xk-KWF" firstAttribute="centerY" secondItem="7pI-k7-fan" secondAttribute="centerY" id="ZDL-XB-EIq"/>
                     <constraint firstAttribute="bottomMargin" secondItem="GdH-cX-jit" secondAttribute="bottom" constant="-8" id="ZhI-kf-oVT"/>
                     <constraint firstItem="7pI-k7-fan" firstAttribute="leading" secondItem="Anc-Ld-rLu" secondAttribute="leading" id="iaj-pq-NJw"/>
                     <constraint firstItem="T58-Fz-z0Q" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="l81-pD-Lcn"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Anc-Ld-rLu" secondAttribute="trailing" id="pTp-m9-gGO"/>
                     <constraint firstItem="7pI-k7-fan" firstAttribute="bottom" secondItem="T58-Fz-z0Q" secondAttribute="bottom" id="rgk-tc-VMB"/>
                     <constraint firstItem="Anc-Ld-rLu" firstAttribute="top" secondItem="T58-Fz-z0Q" secondAttribute="top" id="zNS-ig-8RT"/>
-                    <constraint firstItem="TMq-08-9lo" firstAttribute="centerY" secondItem="Anc-Ld-rLu" secondAttribute="centerY" id="zg3-xs-0SQ"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="collectionNameLabel" destination="7pI-k7-fan" id="NcE-oF-W32"/>
                 <outlet property="thumbImageView" destination="T58-Fz-z0Q" id="0XX-ws-b20"/>
-                <outlet property="trackGenreLabel" destination="tlX-Xk-KWF" id="odO-bH-4M9"/>
                 <outlet property="trackNameLabel" destination="Anc-Ld-rLu" id="LDt-nE-mhU"/>
-                <outlet property="trackPrice" destination="TMq-08-9lo" id="GhM-Ke-9fL"/>
             </connections>
             <point key="canvasLocation" x="-104" y="42"/>
         </tableViewCell>

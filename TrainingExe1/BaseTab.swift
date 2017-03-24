@@ -20,11 +20,11 @@ class BaseTab: UIViewController, UITableViewDataSource, UITableViewDelegate {
     let key = "sex"
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.addSubview(self.circleLoading)
         self.setupUI()
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
         self.loadData()
     }
     

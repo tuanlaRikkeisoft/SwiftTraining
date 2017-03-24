@@ -14,6 +14,10 @@ class Tab3: BaseTab {
         super.viewDidLoad()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+    
     override func loadData() {
         self.circleLoading.start()
         service.getListDataWithClosure(key: self.key, type: "ebook") { (message, data) in

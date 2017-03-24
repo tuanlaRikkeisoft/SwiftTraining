@@ -54,11 +54,17 @@ class RootViewController: UIViewController {
     }
     @IBAction func actionExam10(_ sender: Any) {
         let mainViewController = Exam10()
+        let nvc: UINavigationController = UINavigationController(rootViewController: mainViewController)
+
         let leftViewController = LeftViewController()
-        SlideMenuOptions.leftViewWidth = 50
-        SlideMenuOptions.contentViewScale = 0.50
+        leftViewController.mainViewController = nvc
+
+        SlideMenuOptions.leftViewWidth = 280
         
-        let slideMenuController = SlideMenuController(mainViewController: mainViewController, leftMenuViewController: leftViewController)
+        let slideMenuController = SlideMenuController(mainViewController: nvc, leftMenuViewController: leftViewController)
+        slideMenuController.automaticallyAdjustsScrollViewInsets = true
+        slideMenuController.delegate? = mainViewController
         (UIApplication.shared.delegate as! AppDelegate).window?.rootViewController = slideMenuController
+        (UIApplication.shared.delegate as! AppDelegate).window?.makeKeyAndVisible()
     }
 }

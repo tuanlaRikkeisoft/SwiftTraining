@@ -9,49 +9,51 @@
 import UIKit
 import SlideMenuControllerSwift
 
-class Exam10: UIViewController ,SlideMenuControllerDelegate{
+class Exam10: UIViewController{
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.setNavigationBarItem()
         if let slideMenuController = self.slideMenuController() {
-            slideMenuController.addLeftBarButtonWithImage(UIImage(named: "menu.png")!)
             slideMenuController.delegate? = self
         }
-        
-        // Open
-        self.slideMenuController()?.openLeft()
-        self.slideMenuController()?.openRight()
-        
-        // close
-        self.slideMenuController()?.closeLeft()
-        self.slideMenuController()?.closeRight()
-    }
     
-    
-    func leftWillOpen(){
-        
-    }
-    func leftDidOpen(){
-        
-    }
-    func leftWillClose(){
-        
-    }
-    func leftDidClose(){
-        
-    }
-    func rightWillOpen(){
-        
-    }
-    func rightDidOpen(){
-        
-    }
-    func rightWillClose(){
-        
-    }
-    func rightDidClose(){
-        
     }
 
 }
+
+extension Exam10 : SlideMenuControllerDelegate {
+    
+    func leftWillOpen() {
+        print("SlideMenuControllerDelegate: leftWillOpen")
+    }
+    
+    func leftDidOpen() {
+        print("SlideMenuControllerDelegate: leftDidOpen")
+    }
+    
+    func leftWillClose() {
+        print("SlideMenuControllerDelegate: leftWillClose")
+    }
+    
+    func leftDidClose() {
+        print("SlideMenuControllerDelegate: leftDidClose")
+    }
+    
+    func rightWillOpen() {
+        print("SlideMenuControllerDelegate: rightWillOpen")
+    }
+    
+    func rightDidOpen() {
+        print("SlideMenuControllerDelegate: rightDidOpen")
+    }
+    
+    func rightWillClose() {
+        print("SlideMenuControllerDelegate: rightWillClose")
+    }
+    
+    func rightDidClose() {
+        print("SlideMenuControllerDelegate: rightDidClose")
+    }
+}
+

@@ -11,7 +11,6 @@
 		4C35AD231E841FBA00843CDD /* Exam10.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C35AD211E841FBA00843CDD /* Exam10.xib */; };
 		4C35AD291E84232700843CDD /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C35AD271E84232700843CDD /* LeftViewController.swift */; };
 		4C35AD2A1E84232700843CDD /* LeftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C35AD281E84232700843CDD /* LeftViewController.xib */; };
-		4C35AD2C1E84258700843CDD /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C35AD2B1E84258700843CDD /* menu@2x.png */; };
 		4C35AD2E1E8426BE00843CDD /* SlideMenuControllerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C35AD2D1E8426BE00843CDD /* SlideMenuControllerSwift.framework */; };
 		4C35AD301E8426C400843CDD /* SlideMenuControllerSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4C35AD2D1E8426BE00843CDD /* SlideMenuControllerSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4CA10F741E80366800D74189 /* Exam3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA10F721E80366800D74189 /* Exam3.swift */; };
@@ -46,6 +45,13 @@
 		774849931E83581100E814D8 /* Exam8Notification.xib in Resources */ = {isa = PBXBuildFile; fileRef = 774849911E83581100E814D8 /* Exam8Notification.xib */; };
 		774849961E835A6600E814D8 /* RootExam8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774849941E835A6600E814D8 /* RootExam8.swift */; };
 		774849971E835A6600E814D8 /* RootExam8.xib in Resources */ = {isa = PBXBuildFile; fileRef = 774849951E835A6600E814D8 /* RootExam8.xib */; };
+		775BBDD11E84AD0D00F61595 /* Exam10Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775BBDCF1E84AD0D00F61595 /* Exam10Cell.swift */; };
+		775BBDD21E84AD0D00F61595 /* Exam10Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 775BBDD01E84AD0D00F61595 /* Exam10Cell.xib */; };
+		775BBDD51E84B67400F61595 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775BBDD31E84B67400F61595 /* FirstViewController.swift */; };
+		775BBDD61E84B67400F61595 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 775BBDD41E84B67400F61595 /* FirstViewController.xib */; };
+		775BBDD91E84B68100F61595 /* SecondsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775BBDD71E84B68100F61595 /* SecondsViewController.swift */; };
+		775BBDDA1E84B68100F61595 /* SecondsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 775BBDD81E84B68100F61595 /* SecondsViewController.xib */; };
+		775BBDDC1E84BBC500F61595 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775BBDDB1E84BBC500F61595 /* UIViewController.swift */; };
 		77C8E2BC1E8260E400C1DCB4 /* Exam8Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C8E2BB1E8260E400C1DCB4 /* Exam8Service.swift */; };
 		77C8E2CA1E826F6500C1DCB4 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77C8E2C91E826F6500C1DCB4 /* Alamofire.framework */; };
 		77C8E2CC1E826F6A00C1DCB4 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 77C8E2C91E826F6500C1DCB4 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -107,7 +113,6 @@
 		4C35AD211E841FBA00843CDD /* Exam10.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Exam10.xib; sourceTree = "<group>"; };
 		4C35AD271E84232700843CDD /* LeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
 		4C35AD281E84232700843CDD /* LeftViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftViewController.xib; sourceTree = "<group>"; };
-		4C35AD2B1E84258700843CDD /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@2x.png"; sourceTree = "<group>"; };
 		4C35AD2D1E8426BE00843CDD /* SlideMenuControllerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SlideMenuControllerSwift.framework; sourceTree = "<group>"; };
 		4CA10F721E80366800D74189 /* Exam3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exam3.swift; sourceTree = "<group>"; };
 		4CA10F731E80366800D74189 /* Exam3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Exam3.xib; sourceTree = "<group>"; };
@@ -143,6 +148,13 @@
 		774849911E83581100E814D8 /* Exam8Notification.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Exam8Notification.xib; sourceTree = "<group>"; };
 		774849941E835A6600E814D8 /* RootExam8.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootExam8.swift; sourceTree = "<group>"; };
 		774849951E835A6600E814D8 /* RootExam8.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootExam8.xib; sourceTree = "<group>"; };
+		775BBDCF1E84AD0D00F61595 /* Exam10Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exam10Cell.swift; sourceTree = "<group>"; };
+		775BBDD01E84AD0D00F61595 /* Exam10Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Exam10Cell.xib; sourceTree = "<group>"; };
+		775BBDD31E84B67400F61595 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		775BBDD41E84B67400F61595 /* FirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
+		775BBDD71E84B68100F61595 /* SecondsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondsViewController.swift; sourceTree = "<group>"; };
+		775BBDD81E84B68100F61595 /* SecondsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondsViewController.xib; sourceTree = "<group>"; };
+		775BBDDB1E84BBC500F61595 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		77C8E2BB1E8260E400C1DCB4 /* Exam8Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exam8Service.swift; sourceTree = "<group>"; };
 		77C8E2C91E826F6500C1DCB4 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = TrainingExe1/Alamofire.framework; sourceTree = "<group>"; };
 		77FA02091E80B6070032E955 /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
@@ -199,10 +211,17 @@
 		4C35AD1F1E841F7900843CDD /* Exam10 */ = {
 			isa = PBXGroup;
 			children = (
+				775BBDDB1E84BBC500F61595 /* UIViewController.swift */,
 				4C35AD201E841FBA00843CDD /* Exam10.swift */,
 				4C35AD211E841FBA00843CDD /* Exam10.xib */,
 				4C35AD271E84232700843CDD /* LeftViewController.swift */,
 				4C35AD281E84232700843CDD /* LeftViewController.xib */,
+				775BBDCF1E84AD0D00F61595 /* Exam10Cell.swift */,
+				775BBDD01E84AD0D00F61595 /* Exam10Cell.xib */,
+				775BBDD31E84B67400F61595 /* FirstViewController.swift */,
+				775BBDD41E84B67400F61595 /* FirstViewController.xib */,
+				775BBDD71E84B68100F61595 /* SecondsViewController.swift */,
+				775BBDD81E84B68100F61595 /* SecondsViewController.xib */,
 			);
 			name = Exam10;
 			sourceTree = "<group>";
@@ -362,7 +381,6 @@
 		77FA023D1E80FFAE0032E955 /* Image */ = {
 			isa = PBXGroup;
 			children = (
-				4C35AD2B1E84258700843CDD /* menu@2x.png */,
 				77FA025C1E8128460032E955 /* poke@2x.jpg */,
 				77FA02581E81271F0032E955 /* poke4@2x.png */,
 				77FA02591E81271F0032E955 /* poke5@2x.png */,
@@ -479,6 +497,7 @@
 				77FA02341E80E8BE0032E955 /* 3star@2x.png in Resources */,
 				77FA021E1E80D9810032E955 /* Exam3Cell.xib in Resources */,
 				77FA024C1E811C300032E955 /* DetailExam4.xib in Resources */,
+				775BBDD61E84B67400F61595 /* FirstViewController.xib in Resources */,
 				77FA02321E80E8BE0032E955 /* 1star@2x.png in Resources */,
 				773818821E8204EB00EBF5E2 /* Exam6Cell.xib in Resources */,
 				4C35AD2A1E84232700843CDD /* LeftViewController.xib in Resources */,
@@ -489,8 +508,8 @@
 				77FA02511E81241F0032E955 /* Exam6.xib in Resources */,
 				4CA10F791E80372300D74189 /* Exam4.xib in Resources */,
 				77FA021A1E80D7D30032E955 /* Exam3Tab3.xib in Resources */,
+				775BBDDA1E84B68100F61595 /* SecondsViewController.xib in Resources */,
 				77FA02451E8104840032E955 /* right-arrow@2x.png in Resources */,
-				4C35AD2C1E84258700843CDD /* menu@2x.png in Resources */,
 				77356DE91E7FA7A60032E9DE /* RootViewController.xib in Resources */,
 				77FA02431E8103550032E955 /* Exam4Cell.xib in Resources */,
 				77FA02101E80B7280032E955 /* radio-selected@2x.png in Resources */,
@@ -513,6 +532,7 @@
 				77FA022A1E80E6D50032E955 /* khoai-tay@2x.jpg in Resources */,
 				77FA02311E80E8BE0032E955 /* 0star@2x.png in Resources */,
 				77FA02471E810D9B0032E955 /* video-icon@2x.png in Resources */,
+				775BBDD21E84AD0D00F61595 /* Exam10Cell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,6 +547,7 @@
 				77FA021D1E80D9810032E955 /* Exam3Cell.swift in Sources */,
 				77FA023F1E81006F0032E955 /* AVResultModel.swift in Sources */,
 				7738188A1E8212E100EBF5E2 /* AddAVResultViewController.swift in Sources */,
+				775BBDD91E84B68100F61595 /* SecondsViewController.swift in Sources */,
 				77C8E2BC1E8260E400C1DCB4 /* Exam8Service.swift in Sources */,
 				4C35AD291E84232700843CDD /* LeftViewController.swift in Sources */,
 				773818B91E8238DE00EBF5E2 /* Songs.swift in Sources */,
@@ -536,12 +557,14 @@
 				77FA02121E80BAF90032E955 /* Exam3Containner.swift in Sources */,
 				7748498E1E8357DE00E814D8 /* Exam8Delegate.swift in Sources */,
 				4C35AD221E841FBA00843CDD /* Exam10.swift in Sources */,
+				775BBDDC1E84BBC500F61595 /* UIViewController.swift in Sources */,
 				77356DCF1E7F80FC0032E9DE /* AppDelegate.swift in Sources */,
 				77356DE81E7FA7A60032E9DE /* RootViewController.swift in Sources */,
 				773818B61E82364100EBF5E2 /* Exam8.swift in Sources */,
 				77FA02501E81241F0032E955 /* Exam6.swift in Sources */,
 				7748498A1E8357D100E814D8 /* Exam8Closure.swift in Sources */,
 				77356DEC1E7FA8410032E9DE /* Exam1.swift in Sources */,
+				775BBDD11E84AD0D00F61595 /* Exam10Cell.swift in Sources */,
 				774849921E83581100E814D8 /* Exam8Notification.swift in Sources */,
 				77FA02201E80E4380032E955 /* Exam3Model.swift in Sources */,
 				773818811E8204EB00EBF5E2 /* Exam6Cell.swift in Sources */,
@@ -550,6 +573,7 @@
 				77356DE41E7FA5440032E9DE /* Exam2.swift in Sources */,
 				77FA024B1E811C300032E955 /* DetailExam4.swift in Sources */,
 				773818BC1E823C5A00EBF5E2 /* Exam8Cell.swift in Sources */,
+				775BBDD51E84B67400F61595 /* FirstViewController.swift in Sources */,
 				4CA10F781E80372300D74189 /* Exam4.swift in Sources */,
 				773818861E8212C800EBF5E2 /* Exam7.swift in Sources */,
 			);

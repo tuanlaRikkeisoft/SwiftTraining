@@ -24,6 +24,7 @@ class Exam8Notification: Exam8 {
     }
     
     func reloadData(_ notification: Notification){
+        self.songs.removeAll()
         if let myData = notification.userInfo as? [String: Any]{
             self.songs = myData["listSongs"] as! [Songs]
         }

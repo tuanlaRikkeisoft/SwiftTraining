@@ -14,16 +14,12 @@ class Tab1: BaseTab {
         super.viewDidLoad()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-    }
-    
     override func loadData() {
-        self.circleLoading.start()
+        self.loadingIndicator(true)
         service.getListDataWithClosure(key: self.key, type: "musicVideo") { (message, data) in
             self.medias = data
             self.tableView.reloadData()
-            self.circleLoading.stop()
+            self.loadingIndicator(false)
         }
     }
 }

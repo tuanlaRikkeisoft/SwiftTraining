@@ -45,6 +45,18 @@
 		774849931E83581100E814D8 /* Exam8Notification.xib in Resources */ = {isa = PBXBuildFile; fileRef = 774849911E83581100E814D8 /* Exam8Notification.xib */; };
 		774849961E835A6600E814D8 /* RootExam8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774849941E835A6600E814D8 /* RootExam8.swift */; };
 		774849971E835A6600E814D8 /* RootExam8.xib in Resources */ = {isa = PBXBuildFile; fileRef = 774849951E835A6600E814D8 /* RootExam8.xib */; };
+		774CB1D51E88CA3D00D34340 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774CB1C91E88CA3D00D34340 /* Cache.swift */; };
+		774CB1D61E88CA3D00D34340 /* CancellationToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774CB1CA1E88CA3D00D34340 /* CancellationToken.swift */; };
+		774CB1D71E88CA3D00D34340 /* DataDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774CB1CB1E88CA3D00D34340 /* DataDecoder.swift */; };
+		774CB1D81E88CA3D00D34340 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774CB1CC1E88CA3D00D34340 /* DataLoader.swift */; };
+		774CB1D91E88CA3D00D34340 /* Deduplicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774CB1CD1E88CA3D00D34340 /* Deduplicator.swift */; };
+		774CB1DA1E88CA3D00D34340 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774CB1CE1E88CA3D00D34340 /* Loader.swift */; };
+		774CB1DB1E88CA3D00D34340 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774CB1CF1E88CA3D00D34340 /* Manager.swift */; };
+		774CB1DC1E88CA3D00D34340 /* Nuke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774CB1D01E88CA3D00D34340 /* Nuke.swift */; };
+		774CB1DD1E88CA3D00D34340 /* Preheater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774CB1D11E88CA3D00D34340 /* Preheater.swift */; };
+		774CB1DE1E88CA3D00D34340 /* Processor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774CB1D21E88CA3D00D34340 /* Processor.swift */; };
+		774CB1DF1E88CA3D00D34340 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774CB1D31E88CA3D00D34340 /* Request.swift */; };
+		774CB1E01E88CA3D00D34340 /* Scheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774CB1D41E88CA3D00D34340 /* Scheduler.swift */; };
 		775BBDD11E84AD0D00F61595 /* Exam10Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775BBDCF1E84AD0D00F61595 /* Exam10Cell.swift */; };
 		775BBDD21E84AD0D00F61595 /* Exam10Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 775BBDD01E84AD0D00F61595 /* Exam10Cell.xib */; };
 		775BBDD51E84B67400F61595 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775BBDD31E84B67400F61595 /* FirstViewController.swift */; };
@@ -173,6 +185,18 @@
 		774849911E83581100E814D8 /* Exam8Notification.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Exam8Notification.xib; sourceTree = "<group>"; };
 		774849941E835A6600E814D8 /* RootExam8.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootExam8.swift; sourceTree = "<group>"; };
 		774849951E835A6600E814D8 /* RootExam8.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootExam8.xib; sourceTree = "<group>"; };
+		774CB1C91E88CA3D00D34340 /* Cache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
+		774CB1CA1E88CA3D00D34340 /* CancellationToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CancellationToken.swift; sourceTree = "<group>"; };
+		774CB1CB1E88CA3D00D34340 /* DataDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataDecoder.swift; sourceTree = "<group>"; };
+		774CB1CC1E88CA3D00D34340 /* DataLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
+		774CB1CD1E88CA3D00D34340 /* Deduplicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deduplicator.swift; sourceTree = "<group>"; };
+		774CB1CE1E88CA3D00D34340 /* Loader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
+		774CB1CF1E88CA3D00D34340 /* Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
+		774CB1D01E88CA3D00D34340 /* Nuke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nuke.swift; sourceTree = "<group>"; };
+		774CB1D11E88CA3D00D34340 /* Preheater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Preheater.swift; sourceTree = "<group>"; };
+		774CB1D21E88CA3D00D34340 /* Processor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Processor.swift; sourceTree = "<group>"; };
+		774CB1D31E88CA3D00D34340 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		774CB1D41E88CA3D00D34340 /* Scheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scheduler.swift; sourceTree = "<group>"; };
 		775BBDCF1E84AD0D00F61595 /* Exam10Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exam10Cell.swift; sourceTree = "<group>"; };
 		775BBDD01E84AD0D00F61595 /* Exam10Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Exam10Cell.xib; sourceTree = "<group>"; };
 		775BBDD31E84B67400F61595 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -401,6 +425,18 @@
 		77F1174E1E85202F00949193 /* Load Image */ = {
 			isa = PBXGroup;
 			children = (
+				774CB1C91E88CA3D00D34340 /* Cache.swift */,
+				774CB1CA1E88CA3D00D34340 /* CancellationToken.swift */,
+				774CB1CB1E88CA3D00D34340 /* DataDecoder.swift */,
+				774CB1CC1E88CA3D00D34340 /* DataLoader.swift */,
+				774CB1CD1E88CA3D00D34340 /* Deduplicator.swift */,
+				774CB1CE1E88CA3D00D34340 /* Loader.swift */,
+				774CB1CF1E88CA3D00D34340 /* Manager.swift */,
+				774CB1D01E88CA3D00D34340 /* Nuke.swift */,
+				774CB1D11E88CA3D00D34340 /* Preheater.swift */,
+				774CB1D21E88CA3D00D34340 /* Processor.swift */,
+				774CB1D31E88CA3D00D34340 /* Request.swift */,
+				774CB1D41E88CA3D00D34340 /* Scheduler.swift */,
 				77F117511E85204500949193 /* ImageDownloadManager.swift */,
 				77F1174F1E85203C00949193 /* UIImageView+AsyncLoad.swift */,
 			);
@@ -650,9 +686,12 @@
 				775BBDD91E84B68100F61595 /* SecondsViewController.swift in Sources */,
 				77F1170F1E84FF0900949193 /* Exam10Service.swift in Sources */,
 				77C8E2BC1E8260E400C1DCB4 /* Exam8Service.swift in Sources */,
+				774CB1DA1E88CA3D00D34340 /* Loader.swift in Sources */,
+				774CB1E01E88CA3D00D34340 /* Scheduler.swift in Sources */,
 				4C35AD291E84232700843CDD /* LeftViewController.swift in Sources */,
 				77F117201E8507E300949193 /* Tab2.swift in Sources */,
 				775BBE2B1E84DF4A00F61595 /* CAPSPageMenu.swift in Sources */,
+				774CB1DC1E88CA3D00D34340 /* Nuke.swift in Sources */,
 				775BBE2F1E84DF4A00F61595 /* CAPSPageMenu+UIScrollViewDelegate.swift in Sources */,
 				773818B91E8238DE00EBF5E2 /* Songs.swift in Sources */,
 				775BBE2E1E84DF4A00F61595 /* CAPSPageMenu+UIGestureRecognizerDelegate.swift in Sources */,
@@ -665,7 +704,10 @@
 				4C35AD221E841FBA00843CDD /* Exam10.swift in Sources */,
 				77F117121E85034F00949193 /* BaseTab.swift in Sources */,
 				775BBDDC1E84BBC500F61595 /* UIViewController.swift in Sources */,
+				774CB1DF1E88CA3D00D34340 /* Request.swift in Sources */,
+				774CB1DB1E88CA3D00D34340 /* Manager.swift in Sources */,
 				77356DCF1E7F80FC0032E9DE /* AppDelegate.swift in Sources */,
+				774CB1DD1E88CA3D00D34340 /* Preheater.swift in Sources */,
 				77356DE81E7FA7A60032E9DE /* RootViewController.swift in Sources */,
 				77F1171C1E8507D600949193 /* Tab1.swift in Sources */,
 				773818B61E82364100EBF5E2 /* Exam8.swift in Sources */,
@@ -674,6 +716,7 @@
 				775BBE301E84DF4A00F61595 /* CAPSPageMenuConfiguration.swift in Sources */,
 				77356DEC1E7FA8410032E9DE /* Exam1.swift in Sources */,
 				775BBE2D1E84DF4A00F61595 /* CAPSPageMenu+UIConfiguration.swift in Sources */,
+				774CB1D61E88CA3D00D34340 /* CancellationToken.swift in Sources */,
 				77F117281E8507F900949193 /* Tab4.swift in Sources */,
 				775BBDD11E84AD0D00F61595 /* Exam10Cell.swift in Sources */,
 				774849921E83581100E814D8 /* Exam8Notification.swift in Sources */,
@@ -684,8 +727,13 @@
 				77FA02191E80D7D30032E955 /* Exam3Tab3.swift in Sources */,
 				77F117521E85204500949193 /* ImageDownloadManager.swift in Sources */,
 				7738188E1E82130A00EBF5E2 /* TrainingExe.xcdatamodeld in Sources */,
+				774CB1D51E88CA3D00D34340 /* Cache.swift in Sources */,
+				774CB1DE1E88CA3D00D34340 /* Processor.swift in Sources */,
+				774CB1D81E88CA3D00D34340 /* DataLoader.swift in Sources */,
 				77356DE41E7FA5440032E9DE /* Exam2.swift in Sources */,
+				774CB1D71E88CA3D00D34340 /* DataDecoder.swift in Sources */,
 				77FA024B1E811C300032E955 /* DetailExam4.swift in Sources */,
+				774CB1D91E88CA3D00D34340 /* Deduplicator.swift in Sources */,
 				773818BC1E823C5A00EBF5E2 /* Exam8Cell.swift in Sources */,
 				775BBDD51E84B67400F61595 /* FirstViewController.swift in Sources */,
 				77F117161E85045300949193 /* Exam10MediaCell.swift in Sources */,

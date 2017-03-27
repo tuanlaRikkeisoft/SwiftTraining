@@ -55,10 +55,8 @@ class Exam8: UIViewController, UISearchBarDelegate, UITableViewDelegate, UITable
         let tag = 1
         if show {
             self.view.alpha = 0.5
-            let indicator = UIActivityIndicatorView()
-            let buttonHeight = self.view.bounds.size.height
-            let buttonWidth = self.view.bounds.size.width
-            indicator.center = CGPoint(x: buttonWidth/2, y: buttonHeight/2)
+            let indicator = UIActivityIndicatorView.init(activityIndicatorStyle: UIActivityIndicatorViewStyle.gray)
+            indicator.center = view.center
             indicator.tag = tag
             self.view.addSubview(indicator)
             indicator.startAnimating()
@@ -70,6 +68,4 @@ class Exam8: UIViewController, UISearchBarDelegate, UITableViewDelegate, UITable
             }
         }
     }
-    
-    
 }

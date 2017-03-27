@@ -13,17 +13,13 @@ class Tab4: BaseTab {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-    }
-    
+
     override func loadData() {
-        self.circleLoading.start()
+        self.loadingIndicator(true)
         service.getListDataWithClosure(key: self.key, type: "audiobook") { (message, data) in
             self.medias = data
             self.tableView.reloadData()
-            self.circleLoading.stop()
+            self.loadingIndicator(false)
         }
     }
 }

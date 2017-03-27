@@ -16,6 +16,7 @@ class Exam8Delegate: Exam8 ,Exam8ServiceDelegate{
     }
 
     func getDataCompleted(data: [Songs], message: String) {
+        self.songs.removeAll()
         self.songs = data
         self.tableView.reloadData()
         self.loadingIndicator(false)

@@ -20,6 +20,7 @@ class Exam8Closure: Exam8 {
     
     override func search(_ keyString: String) {
         self.loadingIndicator(true)
+        self.songs.removeAll()
         service.getListSongWithClosure(key:keyString) { (message, data) in
             self.songs = data
             self.tableView.reloadData()

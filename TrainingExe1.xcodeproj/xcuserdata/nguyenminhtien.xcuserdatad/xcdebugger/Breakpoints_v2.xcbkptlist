@@ -90,7 +90,7 @@
                   moduleName = "TrainingExe1"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/nguyenminhtien/Desktop/TrainingExe1/TrainingExe1/Exam7.swift"
-                  timestampString = "512044257.106481"
+                  timestampString = "512282854.998499"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "44"
@@ -105,7 +105,7 @@
                   moduleName = "TrainingExe1"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/nguyenminhtien/Desktop/TrainingExe1/TrainingExe1/Exam7.swift"
-                  timestampString = "512044257.108705"
+                  timestampString = "512282855.001023"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "44"
@@ -120,7 +120,7 @@
                   moduleName = "TrainingExe1"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/nguyenminhtien/Desktop/TrainingExe1/TrainingExe1/Exam7.swift"
-                  timestampString = "512044257.110927"
+                  timestampString = "512282855.003063"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "44"
@@ -136,28 +136,12 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TrainingExe1/Exam8Delegate.swift"
-            timestampString = "511927389.220027"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "search(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "TrainingExe1/Exam8Service.swift"
-            timestampString = "512041758.607737"
+            timestampString = "512280033.184248"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
             landmarkName = "getListSongWithDelegate(key:)"
             landmarkType = "7">
             <Locations>
@@ -169,11 +153,11 @@
                   moduleName = "TrainingExe1"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/nguyenminhtien/Desktop/TrainingExe1/TrainingExe1/Exam8Service.swift"
-                  timestampString = "512044257.119567"
+                  timestampString = "512282855.008911"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "60"
-                  endingLineNumber = "60"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
                   offsetFromSymbolStart = "4979">
                </Location>
                <Location
@@ -184,11 +168,11 @@
                   moduleName = "TrainingExe1"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/nguyenminhtien/Desktop/TrainingExe1/TrainingExe1/Exam8Service.swift"
-                  timestampString = "512044257.12188"
+                  timestampString = "512282855.011328"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "60"
-                  endingLineNumber = "60"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
                   offsetFromSymbolStart = "6116">
                </Location>
             </Locations>
@@ -201,11 +185,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TrainingExe1/Exam8Delegate.swift"
-            timestampString = "511927376.620477"
+            timestampString = "512282965.357427"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
             landmarkName = "getDataCompleted(data:message:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -255,6 +239,166 @@
             startingLineNumber = "67"
             endingLineNumber = "67"
             landmarkName = "didMoveToPage(controller:index:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TrainingExe1/Exam8Service.swift"
+            timestampString = "512280021.916783"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "getListSongWithClosure(key:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TrainingExe1/Exam8Service.swift"
+            timestampString = "512280074.619976"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "getListSongWithClosure(key:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TrainingExe1.Exam8Service.(getListSongWithClosure (key : Swift.String, completion : (Swift.String, Swift.Array&lt;TrainingExe1.Songs&gt;) -&gt; ()) -&gt; ()).(closure #1)"
+                  moduleName = "TrainingExe1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nguyenminhtien/Desktop/TrainingExe1/TrainingExe1/Exam8Service.swift"
+                  timestampString = "512282855.025872"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "4986">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TrainingExe1.Exam8Service.(getListSongWithClosure (key : Swift.String, completion : (Swift.String, Swift.Array&lt;TrainingExe1.Songs&gt;) -&gt; ()) -&gt; ()).(closure #1)"
+                  moduleName = "TrainingExe1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nguyenminhtien/Desktop/TrainingExe1/TrainingExe1/Exam8Service.swift"
+                  timestampString = "512282855.027148"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "5865">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TrainingExe1/Exam8.swift"
+            timestampString = "512280081.668208"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "searchBarSearchButtonClicked(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TrainingExe1/Tab5.swift"
+            timestampString = "512282678.001291"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "loadData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TrainingExe1/Tab4.swift"
+            timestampString = "512282681.78544"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "loadData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TrainingExe1/Tab3.swift"
+            timestampString = "512282684.785521"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "loadData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TrainingExe1/Tab2.swift"
+            timestampString = "512282687.081647"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "loadData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TrainingExe1/Tab1.swift"
+            timestampString = "512282689.873768"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "loadData()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

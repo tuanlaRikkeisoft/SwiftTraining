@@ -25,6 +25,7 @@ class BaseTab: UIViewController, UITableViewDataSource, UITableViewDelegate {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        self.medias.removeAll()
         self.loadData()
     }
     
@@ -53,4 +54,22 @@ class BaseTab: UIViewController, UITableViewDataSource, UITableViewDelegate {
         return 90
     }
     
+    func loadingIndicator(_ show: Bool) {
+        let tag = 1
+        if show {
+            self.view.alpha = 0.5
+            let indicator = UIActivityIndicatorView.init(activityIndicatorStyle: UIActivityIndicatorViewStyle.gray)
+            indicator.center = view.center
+            indicator.tag = tag
+            self.view.addSubview(indicator)
+            indicator.startAnimating()
+        } else {
+            self.view.alpha = 1.0
+            if let indicator = self.view.viewWithTag(tag) as? UIActivityIndicatorView {
+                indicator.stopAnimating()
+                indicator.removeFromSuperview()
+            }
+        }
+    }
+
 }

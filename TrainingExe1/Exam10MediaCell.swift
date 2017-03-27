@@ -29,7 +29,7 @@ class Exam10MediaCell: UITableViewCell {
     public func setModel(_ model: MediaModel){
         self.trackName.text = model.trackName
         self.artistName.text = model.artistName
-        self.thumbImageView.setImageFrom(imageURLString: model.thumbImage!, completionHandler: nil)
+        Manager.shared.loadImage(with: URL.init(string:model.thumbImage!)!, into: self.thumbImageView)
     }
     
 }

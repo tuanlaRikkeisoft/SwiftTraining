@@ -16,6 +16,7 @@ class Exam8Cell: UITableViewCell {
     @IBOutlet weak var trackGenreLabel: UILabel!
     @IBOutlet weak var collectionNameLabel: UILabel!
     
+    var song : Songs!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -27,9 +28,10 @@ class Exam8Cell: UITableViewCell {
     }
     
     public func setModel(_ model: Songs){
-        trackNameLabel.text? = model.trackName!
-        collectionNameLabel.text? = model.artistName!
-        self.thumbImageView.setImageFrom(imageURLString: model.artworkUrl100!, completionHandler: nil)
+        song = model
+        trackNameLabel.text? = song.trackName!
+        collectionNameLabel.text? = song.artistName!
+        Manager.shared.loadImage(with: URL.init(string:song.artworkUrl100!)!, into: self.thumbImageView)
     }
     
 }

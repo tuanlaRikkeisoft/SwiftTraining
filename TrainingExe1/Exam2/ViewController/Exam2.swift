@@ -53,7 +53,7 @@ class Exam2: UIViewController ,UITextFieldDelegate{
         feMaleButton.setImage(UIImage.init(named: "radio-not-selected.png"), for: UIControlState.normal)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(Exam2.dismissKeyboard))
         view.addGestureRecognizer(tap)
     }
     
@@ -142,7 +142,7 @@ class Exam2: UIViewController ,UITextFieldDelegate{
     
     func checkValidate() -> String {
         var message = String()
-        if firstName.characters.count < 1 || lastName.characters.count < 1 || firstNameKata.characters.count < 1 || lastNameKata.characters.count < 1 || email.characters.count < 1 || dateOfBirth.characters.count > 0 {
+        if firstName.characters.count < 1 || lastName.characters.count < 1 || firstNameKata.characters.count < 1 || lastNameKata.characters.count < 1 || email.characters.count < 1 || dateOfBirth.characters.count < 1 || tel1.characters.count < 1 || tel2.characters.count < 1 || tel3.characters.count < 1 {
             message = "Chưa nhập đủ đầu vào"
         }else if (email.characters.count>0  && !isValidEmail(testStr: email))  {
             message = "Email sai định dạng"

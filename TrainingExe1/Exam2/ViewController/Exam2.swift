@@ -51,6 +51,14 @@ class Exam2: UIViewController ,UITextFieldDelegate{
         tel3TextField.keyboardType = UIKeyboardType.phonePad
         maleButton.setImage(UIImage.init(named: "radio-selected.png"), for: UIControlState.normal)
         feMaleButton.setImage(UIImage.init(named: "radio-not-selected.png"), for: UIControlState.normal)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        view.addGestureRecognizer(tap)
+    }
+    
+    func dismissKeyboard() {
+        view.endEditing(true)
     }
     
     override func didReceiveMemoryWarning() {
@@ -84,6 +92,8 @@ class Exam2: UIViewController ,UITextFieldDelegate{
         }
     }
     
+    
+    
     func textFieldDidBeginEditing(_ textField: UITextField) {
         if textField == dateOfBirthTextField {
             let datePicker = UIDatePicker()
@@ -103,6 +113,7 @@ class Exam2: UIViewController ,UITextFieldDelegate{
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
         return true
     }
 
@@ -152,5 +163,23 @@ class Exam2: UIViewController ,UITextFieldDelegate{
         alert.addAction(UIAlertAction.init(title: "Ok", style: UIAlertActionStyle.cancel, handler: nil))
 
         self.present(alert, animated: true, completion: nil)
+    }
+    
+    func keyboardWillShow(notification: NSNotification) {
+        
+        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y == 0{
+                self.view.frame.origin.y -= keyboardSize.height/4
+            }
+        }
+        
+    }
+    
+    func keyboardWillHide(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y != 0{
+                self.view.frame.origin.y += keyboardSize.height/4
+            }
+        }
     }
 }

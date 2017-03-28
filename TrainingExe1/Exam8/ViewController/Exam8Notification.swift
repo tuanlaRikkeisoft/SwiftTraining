@@ -15,9 +15,7 @@ class Exam8Notification: Exam8 {
         NotificationCenter.default.addObserver(self, selector: #selector(reloadData(_:)), name: NSNotification.Name.init(rawValue: "getSongCompletedNotification"), object: nil)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
+    // MARK: Call Service, get Data and binding to View
     override func search(_ keyString: String) {
         self.loadingIndicator(true)
         service.getListSongWithNotification(key: keyString)

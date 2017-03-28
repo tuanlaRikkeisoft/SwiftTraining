@@ -14,6 +14,7 @@ class Tab2: BaseTab {
         super.viewDidLoad()
     }
     
+    // MARK: Call Service, get Data and binding to View (Movie)
     override func loadData() {
         self.loadingIndicator(true)
         service.getListDataWithClosure(key: self.key, type: "movie") { (message, data) in

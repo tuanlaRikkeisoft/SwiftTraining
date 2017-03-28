@@ -15,19 +15,17 @@ class Exam8Delegate: Exam8 ,Exam8ServiceDelegate{
         self.service.delegate = self 
     }
 
+    // MARK: Call Service, get Data and binding to View
+    override func search(_ keyString: String) {
+        self.loadingIndicator(true)
+        service.getListSongWithDelegate(key: keyString)
+    }
+    
     func getDataCompleted(data: [Songs], message: String) {
         self.songs.removeAll()
         self.songs = data
         self.tableView.reloadData()
         self.loadingIndicator(false)
-    }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-    
-    override func search(_ keyString: String) {
-        self.loadingIndicator(true)
-        service.getListSongWithDelegate(key: keyString)
     }
 }
 

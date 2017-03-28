@@ -30,13 +30,27 @@ class AddAVResultViewController: UIViewController , UITextFieldDelegate{
         self.captureDateTextField.delegate = self
         self.avValueTextField.delegate = self
         self.loviValueTextField.delegate = self
-
-    }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-
     }
     
+    @IBAction func dismissAction(_ sender: Any) {
+        self.dismiss(animated: true) {
+        }
+    }
+    
+    @IBAction func actionSubmit(_ sender: Any) {
+        self.view!.endEditing(true)
+        print("AV: \(self.avValue)\nLovi:\(loviValue)")
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        let newAVResult = AVResult(context: context)
+        newAVResult.avValue = Float(self.avValue)!
+        newAVResult.loviValue = Int16(self.loviValue)!
+        newAVResult.captureDate = self.captureDate as NSDate?
+        (UIApplication.shared.delegate as! AppDelegate).saveContext()
+        self.dismiss(animated: true, completion: nil)
+    }
+
+    
+    // MARK: TextFieldDelegate
     func textFieldDidEndEditing(_ textField: UITextField) {
         let resultString = textField.text!.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
 
@@ -67,25 +81,5 @@ class AddAVResultViewController: UIViewController , UITextFieldDelegate{
         captureDateTextField.text = dateFormatter.string(from: sender.date)
         captureDate = sender.date
     }
-
-    
-    @IBAction func dismissAction(_ sender: Any) {
-        self.dismiss(animated: true) { 
-            
-        }
-    }
-
-    @IBAction func actionSubmit(_ sender: Any) {
-        self.view!.endEditing(true)
-        print("AV: \(self.avValue)\nLovi:\(loviValue)")
-        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-        let newAVResult = AVResult(context: context)
-        newAVResult.avValue = Float(self.avValue)!
-        newAVResult.loviValue = Int16(self.loviValue)!
-        newAVResult.captureDate = self.captureDate as NSDate?
-        (UIApplication.shared.delegate as! AppDelegate).saveContext()
-        self.dismiss(animated: true, completion: nil)
-}
-    
     
 }

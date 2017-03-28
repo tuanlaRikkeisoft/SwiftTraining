@@ -10,6 +10,8 @@ import UIKit
 
 class RootExam8: UIViewController {
 
+    // MARK: Setup Root ViewController with 3 way to get data
+    
     @IBAction func actionDelegate(_ sender: Any) {
         self.navigationController?.pushViewController(Exam8Delegate(), animated: true)
     }
@@ -24,14 +26,5 @@ class RootExam8: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }

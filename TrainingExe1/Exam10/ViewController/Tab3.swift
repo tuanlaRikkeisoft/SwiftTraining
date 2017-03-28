@@ -14,6 +14,7 @@ class Tab3: BaseTab {
         super.viewDidLoad()
     }
     
+    // MARK: Call Service, get Data and binding to View (Ebook)
     override func loadData() {
         self.loadingIndicator(true)
         service.getListDataWithClosure(key: self.key, type: "ebook") { (message, data) in

@@ -20,9 +20,8 @@ class Exam3Tab2: UIViewController {
         self.setupUI()
     }
 
-    
+    // MARK: setup Ui with visualFormat in NSLayoutConstraint
     func setupUI(){
-        
         topView.translatesAutoresizingMaskIntoConstraints = false
         label.translatesAutoresizingMaskIntoConstraints = false
         rightView.translatesAutoresizingMaskIntoConstraints = false
@@ -40,22 +39,14 @@ class Exam3Tab2: UIViewController {
         let withOfBottomViewConstraint = NSLayoutConstraint.constraints(withVisualFormat: "H:[bottomView(100)]", options:[], metrics: nil, views: views)
         
         let horizontalBottomViewConstraint = NSLayoutConstraint(item: bottomView, attribute: NSLayoutAttribute.centerX, relatedBy: NSLayoutRelation.equal, toItem: view, attribute: NSLayoutAttribute.centerX, multiplier: 1, constant: 0)
-        let topLabelViewConstraint = NSLayoutConstraint(item: label, attribute: .top, relatedBy: .equal, toItem: rightView, attribute: .topMargin, multiplier: 1, constant: 0)
+        let topLabelViewConstraint = NSLayoutConstraint(item: label, attribute: .top, relatedBy: .equal, toItem: rightView, attribute: .top, multiplier: 1, constant: 0)
         
         NSLayoutConstraint.activate(leftRightTopViewConstraints)
         NSLayoutConstraint.activate(topHeightViewTopViewConstraints)
         NSLayoutConstraint.activate(rightViewAndLabelConstraint)
         NSLayoutConstraint.activate(bottomVerticalViewConstraint)
-        //NSLayoutConstraint.activate(bottomHorizontalViewConstraint)
         NSLayoutConstraint.activate(withOfBottomViewConstraint)
         NSLayoutConstraint.activate([horizontalBottomViewConstraint])
         NSLayoutConstraint.activate([topLabelViewConstraint])
-
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
 }

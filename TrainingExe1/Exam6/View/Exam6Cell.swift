@@ -28,13 +28,14 @@ class Exam6Cell: UICollectionViewCell {
         self.addGestureRecognizer(swipeGesture)
     }
 
-    
     private func createPokeViewWithImage(imageName: String, tag: Int) ->UIImageView{
         let newPokeImageView = UIImageView(frame: self.frame)
         newPokeImageView.image = UIImage(named: imageName)
         newPokeImageView.tag = tag
         return newPokeImageView
     }
+    
+    // MARK: Flip Animation Setup
     
     func flipPokeAnimation(){
         if (imageViewBack.superview != nil) {

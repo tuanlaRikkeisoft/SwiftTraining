@@ -8,12 +8,13 @@
 
 import UIKit
 
+
 class Exam3Tab3: UIViewController , UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
-    
+    let heightOfCell : CGFloat = 140.0
+
     var items =  [Exam3Model]()
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,35 +22,32 @@ class Exam3Tab3: UIViewController , UITableViewDelegate, UITableViewDataSource {
         self.setupTableView()
     }
 
+    // MARK: Register UITableViewCell
     func setupTableView(){
         tableView.register(UINib.init(nibName: "Exam3Cell", bundle: nil), forCellReuseIdentifier: "Exam3Cell")
     }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
+    // MARK: TableView Delegate and DataSource
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let model = items[indexPath.row]
-    
         let cell = tableView.dequeueReusableCell(withIdentifier: "Exam3Cell") as? Exam3Cell
         cell?.setModel(model)
-        
         return cell!;
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5;
+        return items.count
     }
     
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 140;
+        return heightOfCell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableViewAutomaticDimension;
     }
 
+    // MARK: Fake Data
     func fakeData(){
         let restaurant1 = Exam3Model()
         restaurant1.imageName = "khoai-tay.jpg"
@@ -105,7 +103,5 @@ class Exam3Tab3: UIViewController , UITableViewDelegate, UITableViewDataSource {
         items.append(restaurant3)
         items.append(restaurant4)
         items.append(restaurant5)
-        
     }
-
 }

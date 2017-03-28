@@ -18,13 +18,14 @@ class Exam10MediaCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
     }
+    
+    // MARK: Pass data from model to UITableViewCell
     
     public func setModel(_ model: MediaModel){
         self.trackName.text = model.trackName

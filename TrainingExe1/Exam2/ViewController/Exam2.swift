@@ -61,11 +61,7 @@ class Exam2: UIViewController ,UITextFieldDelegate{
         view.endEditing(true)
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
+    // MARK: TextField Delegate
     func textFieldDidEndEditing(_ textField: UITextField) {
         let resultString = textField.text!.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
 
@@ -88,11 +84,9 @@ class Exam2: UIViewController ,UITextFieldDelegate{
         }else if textField == tel3TextField{
             tel3 = resultString
         }else{
-            print("OK")
+            print("")
         }
     }
-    
-    
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
         if textField == dateOfBirthTextField {
@@ -102,6 +96,7 @@ class Exam2: UIViewController ,UITextFieldDelegate{
             datePicker.addTarget(self, action: #selector(datePickerChanged(sender:)), for: .valueChanged)
         }
     }
+    
     func datePickerChanged(sender: UIDatePicker) {
         let dateFormatter = DateFormatter()
         
@@ -116,14 +111,13 @@ class Exam2: UIViewController ,UITextFieldDelegate{
         self.view.endEditing(true)
         return true
     }
-
-   
-
+    
     @IBAction func actionMale(_ sender: Any) {
         sexual = true
         maleButton.setImage(UIImage.init(named: "radio-selected.png"), for: UIControlState.normal)
         feMaleButton.setImage(UIImage.init(named: "radio-not-selected.png"), for: UIControlState.normal)
     }
+    
     @IBAction func actionFeMail(_ sender: Any) {
         sexual = false
         maleButton.setImage(UIImage.init(named: "radio-not-selected.png"), for: UIControlState.normal)
@@ -140,6 +134,7 @@ class Exam2: UIViewController ,UITextFieldDelegate{
         }
     }
     
+    // MARK: Validate Required
     func checkValidate() -> String {
         var message = String()
         if firstName.characters.count < 1 || lastName.characters.count < 1 || firstNameKata.characters.count < 1 || lastNameKata.characters.count < 1 || email.characters.count < 1 || dateOfBirth.characters.count < 1 || tel1.characters.count < 1 || tel2.characters.count < 1 || tel3.characters.count < 1 {
@@ -152,19 +147,22 @@ class Exam2: UIViewController ,UITextFieldDelegate{
         return message
     }
     
+    // MARK: Validate Email
     func isValidEmail(testStr:String) -> Bool {
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
         let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailTest.evaluate(with: testStr)
     }
     
+    // MARK: Show Alert Message
     func showAlertWithMessage(_ message: String){
         let alert = UIAlertController(title: nil, message: message, preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction.init(title: "Ok", style: UIAlertActionStyle.cancel, handler: nil))
-
+        
         self.present(alert, animated: true, completion: nil)
     }
     
+    // MARK: Keyboard Detech Show and Hide
     func keyboardWillShow(notification: NSNotification) {
         
         if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
@@ -172,7 +170,6 @@ class Exam2: UIViewController ,UITextFieldDelegate{
                 self.view.frame.origin.y -= keyboardSize.height/4
             }
         }
-        
     }
     
     func keyboardWillHide(notification: NSNotification) {

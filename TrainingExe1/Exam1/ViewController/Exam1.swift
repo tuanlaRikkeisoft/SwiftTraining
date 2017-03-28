@@ -14,11 +14,6 @@ class Exam1: UIViewController {
         super.viewDidLoad()
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
     @IBAction func action1(_ sender: Any) {
         self.printHelloWorld()
     }
@@ -38,14 +33,13 @@ class Exam1: UIViewController {
     @IBAction func action5(_ sender: Any) {
         self.listDictTest()
     }
-    
-    
-    
+    // MARK: In ra màn hình chữ “Hello World”
+
     public func printHelloWorld(){
         print("Hello World");
     }
     
-   
+    // MARK: In ra màn hình hình chữ nhật
     public func printRectangleStar(){
         for i in 0..<15 {
             for j in 0...12 {
@@ -58,7 +52,7 @@ class Exam1: UIViewController {
             print("\n")
         }
     }
-    
+    // MARK: Khai báo một mảng gồm các chuỗi, thêm một phần tử vào mảng. In ra mảng trước và sau khi thêm
     public func arraytest(){
         var items: [String] = ["Nguyen","Minh","Tien"]
         print("Items Before: \(items)")
@@ -67,14 +61,13 @@ class Exam1: UIViewController {
         
         print("Item Affter Append: \(items)")
     }
-    
+    // MARK: Khai báo một dictionary để lưu thông tin của người dùng (tên, tuổi, địa chỉ, số điện thoại). In ra tên của người dùng đó
     public func dictTest(){
         let dict: [String:String] = ["ten":"Nguyen Minh Tien","tuoi":"26","diachi":"Dong Anh - Ha Noi","sdt":"0966459666"]
         print("Ten cua em la: \(dict["ten"]!)")
     }
-    
+    // MARK: Khai báo một mảng gồm chuỗi các dictionary lưu thông tin của người dùng (như câu 4). Sắp xếp mảng theo độ tuổi tăng dần của người dùng và in ra màn hình
     public func listDictTest(){
-        
         let user1: [String:String] = ["ten":"Nguyen Minh Tien","tuoi":"26","diachi":"Dong Anh - Ha Noi","sdt":"0966459666"]
         let user2: [String:String] = ["ten":"Nguyen Trong Cu","tuoi":"32","diachi":"Trung Quoc","sdt":"0989322322"]
         let user3: [String:String] = ["ten":"Nguyen Tuan Anh","tuoi":"29","diachi":"Hoang Mai - Ha Noi","sdt":"094939266"]
@@ -94,6 +87,5 @@ class Exam1: UIViewController {
             print("\(item["ten"]!) : \(item["tuoi"]!)")
         }
     }
-
 
 }

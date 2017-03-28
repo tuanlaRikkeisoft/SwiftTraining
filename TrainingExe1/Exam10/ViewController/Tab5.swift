@@ -14,6 +14,7 @@ class Tab5: BaseTab {
         super.viewDidLoad()
     }
     
+    // MARK: Call Service, get Data and binding to View (PostCast)
     override func loadData() {
         self.loadingIndicator(true)
         service.getListDataWithClosure(key: self.key, type: "podcast") { (message, data) in

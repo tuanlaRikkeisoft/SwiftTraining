@@ -21,18 +21,16 @@ class Exam3Cell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
     }
-    
+    // MARK: Pass Model to UITableViewCell
     public func setModel(_ model:Exam3Model){
         self.resImageView.image = UIImage.init(named: model.imageName)
         self.restNameLabel.text? = model.name
-        
         self.restReviewLabel.text? = model.numReviews
         self.restStarImageView.image = UIImage.init(named: model.rating)
         self.addressLabel.text? = model.address

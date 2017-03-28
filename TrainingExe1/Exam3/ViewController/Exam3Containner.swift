@@ -19,18 +19,12 @@ class Exam3Containner: UITabBarController, UITabBarControllerDelegate {
         self.setupUI()
     }
 
+    // MARK: Setup TabBar with 3 tab
     func setupUI(){
         exam3Tab1.tabBarItem = UITabBarItem.init(title: "First", image: nil, selectedImage: nil)
         exam3Tab2.tabBarItem = UITabBarItem.init(title: "Second", image: nil, selectedImage: nil)
         exam3Tab3.tabBarItem = UITabBarItem.init(title: "Exersice 2", image: nil, selectedImage: nil)
-        
         self.viewControllers = [exam3Tab1,exam3Tab2,exam3Tab3]
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
 
 }

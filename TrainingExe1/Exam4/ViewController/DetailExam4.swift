@@ -20,12 +20,6 @@ class DetailExam4: UIViewController {
         super.viewDidLoad()
         self.bindingData()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
     
     func bindingData(){
         let dateFormatter = DateFormatter()

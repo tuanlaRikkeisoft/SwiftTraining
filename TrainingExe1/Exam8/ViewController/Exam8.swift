@@ -11,6 +11,7 @@ import UIKit
 class Exam8: UIViewController, UISearchBarDelegate, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
+    let heightOfCell :CGFloat = 90.0
     
     var songs = [Songs]()
     let service = Exam8Service.sharedInstance
@@ -22,10 +23,6 @@ class Exam8: UIViewController, UISearchBarDelegate, UITableViewDelegate, UITable
 
     func setupUI(){
         self.tableView.register(UINib.init(nibName: "Exam8Cell", bundle: nil), forCellReuseIdentifier: "Exam8Cell")
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
     }
     
 
@@ -41,9 +38,10 @@ class Exam8: UIViewController, UISearchBarDelegate, UITableViewDelegate, UITable
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 90
+        return heightOfCell
     }
     
+    // MARK: Search Bar Delegate
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         self.search((searchBar.text?.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines))!)
     }
@@ -51,6 +49,8 @@ class Exam8: UIViewController, UISearchBarDelegate, UITableViewDelegate, UITable
     func search(_ keyString: String){
         fatalError("Must Override")
     }
+    
+    // MARK: show and hide UIACtivity Indicator View
     func loadingIndicator(_ show: Bool) {
         let tag = 1
         if show {

@@ -13,6 +13,7 @@ class Exam7: UIViewController , UITableViewDelegate, UITableViewDataSource{
 
     @IBOutlet weak var tableView: UITableView!
     var items: [AVResult] = []
+    let heightOfCell: CGFloat = 100.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,6 +50,8 @@ class Exam7: UIViewController , UITableViewDelegate, UITableViewDataSource{
         self.navigationController?.present(AddAVResultViewController(), animated: true, completion: nil)
     }
     
+    // MARK: TableView Delegate and DataSource
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
     }
@@ -62,10 +65,7 @@ class Exam7: UIViewController , UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100.0
+        return heightOfCell
     }
-    
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 0.0
-    }
+
 }

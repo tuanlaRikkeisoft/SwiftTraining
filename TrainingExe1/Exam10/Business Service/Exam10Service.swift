@@ -16,7 +16,7 @@ final class Exam10Service: NSObject {
         print("Initilization...")
     }
     
-    //movie, podcast, music, musicVideo, audiobook, shortFilm, tvShow, software, ebook, all
+    // MARK: get list media info and return in closure
     
     public func getListDataWithClosure(key: String,type: String, completion: @escaping (_ message: String,_ data: [MediaModel])-> Void) {
         

@@ -14,13 +14,10 @@ class Exam10: UIViewController ,CAPSPageMenuDelegate{
     var pageMenu : CAPSPageMenu?
     var controllerArray : [UIViewController] = []
 
+    // MARK: setup TabBar 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setNavigationBarItem()
-        if let slideMenuController = self.slideMenuController() {
-            slideMenuController.delegate? = self
-        }
-    
         let tab1 = Tab1()
         tab1.title = "Music Video"
         let tab2 = Tab2()
@@ -52,54 +49,9 @@ class Exam10: UIViewController ,CAPSPageMenuDelegate{
             .menuItemWidthBasedOnTitleTextWidth(true),
             .selectedMenuItemLabelColor(UIColor.white)
         ]
-        
+
         pageMenu = CAPSPageMenu(viewControllers: controllerArray, frame: CGRect.init(x: 0, y: 60, width: self.view.frame.width, height: self.view.frame.height), pageMenuOptions: parameters)
         self.view.addSubview(pageMenu!.view)
         pageMenu!.delegate = self
     }
-
-    
-    func willMoveToPage(controller: UIViewController, index: Int){
-   
-    }
-    
-    func didMoveToPage(controller: UIViewController, index: Int){
-    
-    }
 }
-
-extension Exam10 : SlideMenuControllerDelegate {
-    
-    func leftWillOpen() {
-        print("SlideMenuControllerDelegate: leftWillOpen")
-    }
-    
-    func leftDidOpen() {
-        print("SlideMenuControllerDelegate: leftDidOpen")
-    }
-    
-    func leftWillClose() {
-        print("SlideMenuControllerDelegate: leftWillClose")
-    }
-    
-    func leftDidClose() {
-        print("SlideMenuControllerDelegate: leftDidClose")
-    }
-    
-    func rightWillOpen() {
-        print("SlideMenuControllerDelegate: rightWillOpen")
-    }
-    
-    func rightDidOpen() {
-        print("SlideMenuControllerDelegate: rightDidOpen")
-    }
-    
-    func rightWillClose() {
-        print("SlideMenuControllerDelegate: rightWillClose")
-    }
-    
-    func rightDidClose() {
-        print("SlideMenuControllerDelegate: rightDidClose")
-    }
-}
-

@@ -26,7 +26,7 @@ class Exam4Cell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
     }
-    
+    // MARK: Pass value from Model to UITableViewCell
     public func setModel(_ model: AVResultModel){
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy.MM.dd hh:mm"
@@ -34,7 +34,8 @@ class Exam4Cell: UITableViewCell {
         self.avValueLabel.text? = "AV \(model.avValue.description)"
         self.loviValueLabel.text? = model.loviValue.description
     }
-    
+
+    // MARK: Pass value from Entity to UITableViewCell
     public func setEntity(_ entity: AVResult){
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy.MM.dd hh:mm"

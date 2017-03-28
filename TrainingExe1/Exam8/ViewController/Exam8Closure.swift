@@ -14,10 +14,7 @@ class Exam8Closure: Exam8 {
         super.viewDidLoad()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-    
+    // MARK: Call Service, get Data and binding to View
     override func search(_ keyString: String) {
         self.loadingIndicator(true)
         self.songs.removeAll()

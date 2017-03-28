@@ -14,22 +14,45 @@ class Exam4: UIViewController ,UITableViewDelegate,UITableViewDataSource{
     var items = [AVResultModel]()
     var canDeleteMode : Bool = false
     var canMoveMode : Bool = false
-    
+    let heightOfCell :CGFloat = 100.0
     @IBOutlet weak var editButton: UIButton!
-  
+    @IBOutlet weak var moveButton: UIButton!
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.setupUI()
+        self.fakeData()
+    }
+    
+    func setupUI(){
+        tableView.register(UINib.init(nibName: "Exam4Cell", bundle: nil), forCellReuseIdentifier: "Exam4Cell")
+    }
+    
+    // MARK: Fake Data
+    func fakeData(){
+        self.title = "Exam4"
+        let av1 = AVResultModel.init(Date.init(), 2.1, 164)
+        let av2 = AVResultModel.init(Date.init(), 2.5, 169)
+        let av3 = AVResultModel.init(Date.init(), 1.1, 69)
+        let av4 = AVResultModel.init(Date.init(), 2.0, 139)
+        let av5 = AVResultModel.init(Date.init(), 2.0, 139)
+        let av6 = AVResultModel.init(Date.init(), 2.0, 139)
+        let av7 = AVResultModel.init(Date.init(), 2.0, 139)
+        let av8 = AVResultModel.init(Date.init(), 2.0, 139)
+        items = [av1,av2,av3,av4,av5,av6,av7,av8];
+    }
+
+    // MARK: Edit Action
     @IBAction func actionEdit(_ sender: Any) {
         canDeleteMode = !canDeleteMode
         if canDeleteMode {
-            //tableView.isEditing = true
             editButton.setTitle("Done", for: UIControlState.normal)
         }else{
-            //tableView.isEditing = false
             editButton.setTitle("Edit", for: UIControlState.normal)
         }
         tableView.reloadData()
     }
-    @IBOutlet weak var moveButton: UIButton!
-    
+    // MARK: Move Action
     @IBAction func actionMove(_ sender: Any) {
         canMoveMode = !canMoveMode
         if canMoveMode {
@@ -43,37 +66,12 @@ class Exam4: UIViewController ,UITableViewDelegate,UITableViewDataSource{
         }
         tableView.reloadData()
     }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.setupUI()
-        self.fakeData()
-    }
 
-    func setupUI(){
-        tableView.register(UINib.init(nibName: "Exam4Cell", bundle: nil), forCellReuseIdentifier: "Exam4Cell")
-    }
-    func fakeData(){
-        self.title = "Exam4"
-        let av1 = AVResultModel.init(Date.init(), 2.1, 164)
-        let av2 = AVResultModel.init(Date.init(), 2.5, 169)
-        let av3 = AVResultModel.init(Date.init(), 1.1, 69)
-        let av4 = AVResultModel.init(Date.init(), 2.0, 139)
-        let av5 = AVResultModel.init(Date.init(), 2.0, 139)
-        let av6 = AVResultModel.init(Date.init(), 2.0, 139)
-        let av7 = AVResultModel.init(Date.init(), 2.0, 139)
-        let av8 = AVResultModel.init(Date.init(), 2.0, 139)
-        
-        items = [av1,av2,av3,av4,av5,av6,av7,av8];
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+    // MARK: TableView Delegate and DataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
     }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let model = items[indexPath.row] as AVResultModel
         
@@ -84,12 +82,9 @@ class Exam4: UIViewController ,UITableViewDelegate,UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100.0
+        return heightOfCell
     }
     
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 0.0
-    }
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return canDeleteMode
     }

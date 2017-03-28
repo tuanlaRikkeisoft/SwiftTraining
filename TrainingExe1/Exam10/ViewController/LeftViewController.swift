@@ -22,15 +22,20 @@ protocol LeftMenuProtocol {
 class LeftViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, LeftMenuProtocol  {
 
     @IBOutlet weak var tableView: UITableView!
+    let heightOfCell : CGFloat = 44.0
+    let heightOfHeaderView : CGFloat = 50.0
+    let numberCellOfFirstSection: Int = 1
+    let numberCellOfSecondsSection: Int = 2
+    let numberOfSection : Int = 2
     
     var menus = ["Main", "First", "Seconds"]
     var mainViewController = UINavigationController.init(rootViewController: Exam10())
     var firstViewController =  UINavigationController.init(rootViewController:FirstViewController())
     var secondsViewController = UINavigationController.init(rootViewController:SecondsViewController())
 
-    
     @IBAction func actionSendEmail(_ sender: Any) {
     }
+    
     @IBOutlet weak var introLabel: UILabel!
     
     override func viewDidLoad() {
@@ -38,7 +43,7 @@ class LeftViewController: UIViewController, UITableViewDataSource, UITableViewDe
         self.tableView.register(UINib.init(nibName: "Exam10Cell", bundle: nil), forCellReuseIdentifier: "Exam10Cell")
     }
 
-    
+    // MARK: Triger when change Tab 
     func changeViewController(_ menu: LeftMenu) {
         switch menu {
         case .main:
@@ -50,20 +55,21 @@ class LeftViewController: UIViewController, UITableViewDataSource, UITableViewDe
         }
     }
     
+    // MARK: TableView Delegate and DataSource
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return numberOfSection
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 {
-            return 1
+            return numberCellOfFirstSection
         }else{
-            return 2
+            return numberCellOfSecondsSection
         }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 44
+        return heightOfCell
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -84,7 +90,7 @@ class LeftViewController: UIViewController, UITableViewDataSource, UITableViewDe
         if section == 0 {
             return UIView.init(frame: CGRect.zero)
         }
-        let headerView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: self.tableView.bounds.width, height: 50))
+        let headerView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: self.tableView.bounds.width, height: heightOfHeaderView))
         headerView.backgroundColor = UIColor.groupTableViewBackground
         return headerView
     }
@@ -97,7 +103,7 @@ class LeftViewController: UIViewController, UITableViewDataSource, UITableViewDe
         if section == 0{
             return 0
         }else{
-            return 50
+            return heightOfHeaderView
         }
     }
     

@@ -63,7 +63,6 @@ class RootViewController: UIViewController {
         
         let slideMenuController = SlideMenuController(mainViewController: nvc, leftMenuViewController: leftViewController)
         slideMenuController.automaticallyAdjustsScrollViewInsets = true
-        slideMenuController.delegate? = mainViewController
         (UIApplication.shared.delegate as! AppDelegate).window?.rootViewController = slideMenuController
         (UIApplication.shared.delegate as! AppDelegate).window?.makeKeyAndVisible()
     }
